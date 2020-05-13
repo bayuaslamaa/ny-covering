@@ -5,6 +5,8 @@ import {
     Switch,
     Route
 } from 'react-router-dom'
+import { Dropdown } from 'react-bootstrap'
+import Home from '../containers/Home'
 
 
 export default function Navbar() {
@@ -19,32 +21,36 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                            <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Link</a>
-                        </li>
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a className="dropdown-item" href="#">Action</a>
-                                <a className="dropdown-item" href="#">Another action</a>
-                                <div className="dropdown-divider"></div>
-                                <a className="dropdown-item" href="#">Something else here</a>
-                            </div>
+                            <Link className="nav-link" to="/khimar">Khimar</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link disabled" href="#">Disabled</a>
+                            <Link className="nav-link" to="/abaya">Abaya</Link>
                         </li>
+                        <Dropdown>
+                            <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                                Lists
+                             </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                                <Dropdown.Item><Link to="/khimar">Khimar</Link></Dropdown.Item>
+                                <Dropdown.Item><Link to="/abaya">Abaya</Link></Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
                     </ul>
                     <form className="form-inline my-2 my-lg-0">
                         <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        <button className="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
                     </form>
                 </div>
             </nav>
+            <Switch>
+                <Route exact path="/"><Home /></Route>
+                <Route path="/khimar"><h1>Khimar</h1></Route>
+                <Route path="/abaya"><h1>abaya</h1></Route>
+            </Switch>
         </Router>
     )
 }

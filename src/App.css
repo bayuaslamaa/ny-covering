@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+Carousel.Item img.d-block w-500.image{
+  height: 10px
+}

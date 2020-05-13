@@ -1,4 +1,4 @@
-
+import { SET_PRODUCTS } from '../actions/index'
 
 
 const initialState = {
@@ -13,7 +13,8 @@ export default function reducer(state = initialState, action) {
 
 
     switch (type) {
-
+        case SET_PRODUCTS:
+            return { ...state, products: payload }
         default:
             return state
     }

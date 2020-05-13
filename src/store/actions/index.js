@@ -12,13 +12,16 @@ export const setProducts = data => {
 
 
 function fetchProducts() {
-    return axios.get('http://localhost:3000/products')
+    return axios.get('https://protected-thicket-20896.herokuapp.com/products')
 }
 
 export const getProducts = () => {
     return dispatch => {
         fetchProducts()
-            .then(({ data }) => console.log(data))
+            .then(({ data }) => {
+                const { products } = data
+                dispatch(setProducts(products))
+            })
             .catch(console.log)
     }
 }
