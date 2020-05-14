@@ -10,22 +10,21 @@ export default function Home() {
     useEffect(() => {
         dispatch(getProducts())
     }, [dispatch])
-    console.log(products)
     return (
         <div className="col-5 offset-4">
-            <Carousel wrap={true} interval={800}>
+            <Carousel interval={800}>
                 {
-                    products.map(product => (<Carousel.Item>
+                    products.map(product => (<Carousel.Item key={product.id}>
                         <img
                             style={{ height: "100%", width: "100%" }}
                             className="d-block"
                             src={product.image_url}
                             alt="slide"
                         />
-                        <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption>
+                        {/* <Carousel.Caption>
+                            <h1>{product.name}</h1>
+                            <h3>IDR {product.price}</h3>
+                        </Carousel.Caption> */}
                     </Carousel.Item>))
                 }
 

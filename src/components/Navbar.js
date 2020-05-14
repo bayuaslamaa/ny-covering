@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 import { Dropdown } from 'react-bootstrap'
 import Home from '../containers/Home'
+import Khimar from '../containers/Khimar'
 
 
 export default function Navbar() {
@@ -29,17 +30,20 @@ export default function Navbar() {
                         <li className="nav-item">
                             <Link className="nav-link" to="/abaya">Abaya</Link>
                         </li>
-                        <Dropdown>
-                            <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-                                Lists
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/order">Order</Link>
+                        </li>
+                    </ul>
+                    <Dropdown>
+                        <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                            Lists
                              </Dropdown.Toggle>
 
-                            <Dropdown.Menu>
-                                <Dropdown.Item><Link to="/khimar">Khimar</Link></Dropdown.Item>
-                                <Dropdown.Item><Link to="/abaya">Abaya</Link></Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-                    </ul>
+                        <Dropdown.Menu>
+                            <Dropdown.Item><Link to="/khimar">Khimar</Link></Dropdown.Item>
+                            <Dropdown.Item><Link to="/abaya">Abaya</Link></Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
                     <form className="form-inline my-2 my-lg-0">
                         <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
                         <button className="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
@@ -48,8 +52,9 @@ export default function Navbar() {
             </nav>
             <Switch>
                 <Route exact path="/"><Home /></Route>
-                <Route path="/khimar"><h1>Khimar</h1></Route>
+                <Route path="/khimar"><Khimar /></Route>
                 <Route path="/abaya"><h1>abaya</h1></Route>
+                <Route path="/order"><h1>Order</h1></Route>
             </Switch>
         </Router>
     )
