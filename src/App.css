@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 .App {
   text-align: center;
 }
@@ -37,6 +39,38 @@
   }
 }
 
+
+
+.view {
+  background: white no-repeat center center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .view {
+      overflow: visible;
+      margin-top: -56px;
+  }
+}
+.navbar {
+  z-index: 1;
+}
+
+html,
+body,
+header,
+.view {
+height: 100%;
+
+}
+
 Carousel.Item img.d-block w-500.image{
   height: 10px
+}
+
+div.container.header{
+  height: 300px;
+}
+
+li.nav-item{
+  font-family: 'Josefin Sans', sans-serif;
 }
