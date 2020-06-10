@@ -39,9 +39,9 @@ export default function Navbar() {
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/set">Set</Link>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <Link className="nav-link" to="/order">Order</Link>
-                                </li>
+                                </li> */}
                                 {/* <form className="form-inline my-2 my-lg-0">
                                     <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
                                     <button className="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
@@ -56,7 +56,7 @@ export default function Navbar() {
                     <div className="full-bg-img">
                         <div className="mask rgba-black-strong flex-center">
                             <div className="container header">
-                                <img src="https://i.imgur.com/GfDyFJE.png" style={{ width: "50%", height: "15%", marginTop: 100, marginBottom: "0%" }} />
+                                <img src="https://i.imgur.com/GfDyFJE.png" style={{ width: "50%", height: "15%", marginTop: 100, marginBottom: 0, paddingBottom: 0 }} />
                             </div>
                         </div>
                     </div>

@@ -3,23 +3,16 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getProducts } from '../store/actions'
 import { Carousel } from 'react-bootstrap'
 import { FaInstagram } from 'react-icons/fa'
-import Khimar1 from '../assets/Khimar1.png'
-import Khimar2 from '../assets/Khimar2.jpg'
-import Gamis1 from '../assets/Gamis1.jpg'
-import Gamis2 from '../assets/Gamis2.jpg'
-import Gamis3 from '../assets/Gamis3.jpg'
-import Gamis4 from '../assets/Gamis4.jpg'
-import Gamis5 from '../assets/Gamis5.jpg'
-
+import { IconContext } from "react-icons";
+import { GrInstagram } from 'react-icons/gr'
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
-import ModelPink1 from '../assets/ModelPink1.jpg'
-import ModelBlue1 from '../assets/ModelBlue1.jpg'
-import ModelOlive1 from '../assets/ModelOlive1.jpg'
 
-import ModelPink2 from '../assets/ModelPink2.jpg'
-import ModelBlue2 from '../assets/ModelBlue2.jpg'
-import ModelOlive2 from '../assets/ModelOlive2.jpg'
+import CarouselHome1 from '../assets/CarouserHome1.jpeg'
+import CarouselHome2 from '../assets/CarouselHome2.png'
+import CarouselHome3 from '../assets/CarouselHome2.jpeg'
+
+
 
 import ModelPink3 from '../assets/ModelPink3.jpg'
 import ModelBlue3 from '../assets/ModelBlue3.jpg'
@@ -44,226 +37,40 @@ export default function Home() {
     }, [dispatch])
     return (
         <>
-            <div className="container" style={{ display: "flex", flexDirection: 'row', flexWrap: "wrap", justifyContent: "space-evenly", marginTop: 0 }}>
-                {/* KHIMAR */}
-                <div className="col-8" >
-                    <Carousel interval={800}>
+            <div className="container" style={{ display: "flex", flexDirection: 'row', flexWrap: "wrap", justifyContent: "space-evenly", height: 120 }}>
+
+                <div className="col-12" style={{ top: -100, marginTop: 0, width: "30%" }}>
+                    <Carousel interval={2500} controls={false} indicators={false} >
                         <Carousel.Item>
                             <img
-                                style={{ height: "60%", width: "60%" }}
-                                className="d-block"
-                                src="https://i.imgur.com/ngcAtRp.png"
+                                style={{ width: "100%" }}
+                                className="d-block h-70"
+                                src={CarouselHome1}
                                 alt="slide"
                             />
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
-                                style={{ height: "100%", width: "100%" }}
+                                style={{ width: "100%" }}
                                 className="d-block"
-                                src="https://i.imgur.com/k7jNLIq.png"
+                                src={CarouselHome2}
                                 alt="slide"
                             />
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
-                                style={{ height: "100%", width: "100%" }}
+                                style={{ width: "100%" }}
                                 className="d-block"
-                                src="https://i.imgur.com/wpgMY3v.png"
-                                alt="slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                style={{ height: "100%", width: "100%" }}
-                                className="d-block"
-                                src={Khimar1}
-                                alt="slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                style={{ height: "100%", width: "100%" }}
-                                className="d-block"
-                                src={Khimar2}
+                                src={CarouselHome3}
                                 alt="slide"
                             />
                         </Carousel.Item>
 
                     </Carousel>
                 </div>
-                {/* <div className="col-3">
-                <Carousel interval={800}>
 
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={Gamis1}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={Gamis2}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={Gamis3}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={Gamis4}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={Gamis5}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                </Carousel>
+                <FooterPage />
             </div>
-            <div className="col-3">
-                <Carousel interval={800}>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={ModelPink1}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={ModelBlue1}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={ModelOlive1}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={ModelPink2}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={ModelBlue2}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={ModelOlive2}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={ModelPink3}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={ModelBlue3}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={ModelOlive3}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={ModelPink4}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={ModelBlue4}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={ModelOlive4}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={ModelPink5}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={ModelBlue5}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={{ height: "100%", width: "100%" }}
-                            className="d-block"
-                            src={ModelOlive5}
-                            alt="slide"
-                        />
-                    </Carousel.Item>
-
-
-                </Carousel>
-            </div> */}
-            </div>
-            <FooterPage />
         </>
     )
 }
@@ -273,27 +80,30 @@ export default function Home() {
 const FooterPage = () => {
     return (
         <MDBFooter color="blue" className="font-small pt-5 mt-5">
-            <MDBContainer fluid className="text-center text-md-left">
+            <MDBContainer fluid className="text-center text-md-center">
                 <MDBRow>
-                    <MDBCol md="4">
-                        <h5 className="title">Our Social Media</h5>
-                    </MDBCol>
-                    <MDBCol md="8">
-                        <h5 className="title">You can find us at:</h5>
+                    <MDBCol md="5">
+                        <h4 className="title">Follow:</h4>
                         <ul>
                             <li className="list-unstyled">
-                                <a href="https://www.instagram.com/ny.covering/"><FaInstagram /></a>
+                                <IconContext.Provider value={{ color: "grey", className: "global-class-name", size: "4em" }}>
+                                    <div>
+                                        <a style={{ color: "black", fontSize: 20 }} href="https://www.instagram.com/ny.covering/"><GrInstagram />@ny.covering</a>
+                                    </div>
+                                </IconContext.Provider>
+
                             </li>
-                            <li className="list-unstyled">
-                                <a href="#!">Link 2</a>
-                            </li>
-                            <li className="list-unstyled">
+                            {/* <li className="list-unstyled">
                                 <a href="#!">Link 3</a>
                             </li>
                             <li className="list-unstyled">
                                 <a href="#!">Link 4</a>
-                            </li>
+                            </li> */}
                         </ul>
+                    </MDBCol>
+                    <MDBCol md="8">
+                        {/* <h5 className="title">You can find us at:</h5> */}
+
                     </MDBCol>
                 </MDBRow>
             </MDBContainer>
