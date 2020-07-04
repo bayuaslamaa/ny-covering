@@ -11,12 +11,12 @@ export default function Abaya() {
     const orderNow = () => {
         console.log('hii')
     }
-    return (<div div className="container col-12" >
+    return (<div div className="container col-9" >
         <CardDeck>
             <Card>
                 <Card.Img variant="top" src={Abaya1} />
                 <Card.Body>
-                    <Card.Title>Abaya 1</Card.Title>
+                    <Card.Title style={{ fontSize: 18 }}>Misha Abaya - Nude Mocca</Card.Title>
                     <Card.Text>
                         This is a wider card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.
@@ -30,7 +30,7 @@ export default function Abaya() {
             <Card>
                 <Card.Img variant="top" src={Abaya2} />
                 <Card.Body>
-                    <Card.Title>Abaya 2</Card.Title>
+                    <Card.Title style={{ fontSize: 18 }}>Misha Abaya - Mocca Nude</Card.Title>
                     <Card.Text>
                         This card has supporting text below as a natural lead-in to additional
         content.{' '}
@@ -44,26 +44,12 @@ export default function Abaya() {
             <Card>
                 <Card.Img variant="top" src={Abaya3} />
                 <Card.Body>
-                    <Card.Title>Abaya 3</Card.Title>
+                    <Card.Title style={{ fontSize: 18 }}>Misha Abaya - Dusty Pink Vanilla</Card.Title>
                     <Card.Text>
                         This is a wider card with supporting text below as a natural lead-in to
                         additional content. This card has even longer content than the first to
                         show that equal height action.
                </Card.Text>
-                    <Button onClick={orderNow}>Order Now</Button>
-                </Card.Body>
-                <Card.Footer>
-                    <small className="text-muted">Stocks: 20</small>
-                </Card.Footer>
-            </Card>
-            <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-                     </Card.Text>
                     <Button onClick={orderNow}>Order Now</Button>
                 </Card.Body>
                 <Card.Footer>

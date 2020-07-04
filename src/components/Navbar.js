@@ -31,7 +31,10 @@ export default function Navbar() {
                                     <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/khimar">Khimar</Link>
+                                    <Link className="nav-link" to="/farhah">Farhah</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/misha">Misha</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/abaya">Abaya</Link>
@@ -65,7 +68,8 @@ export default function Navbar() {
 
             <Switch>
                 <Route exact path="/"><Home /></Route>
-                <Route path="/khimar"><Khimar /></Route>
+                <Route path="/farhah"><Khimar misha={true} /></Route>
+                <Route path="/misha"><Khimar misha={false} /></Route>
                 <Route path="/abaya"><Abaya /></Route>
                 <Route path="/order"><h1>Order</h1></Route>
                 <Route path="/set"><Package /></Route>
