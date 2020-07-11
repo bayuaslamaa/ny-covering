@@ -59,7 +59,7 @@ export default function Navbar() {
                     <div className="full-bg-img">
                         <div className="mask rgba-black-strong flex-center">
                             <div className="container header">
-                                <img src="https://i.imgur.com/GfDyFJE.png" style={{ width: "50%", height: "15%", marginTop: 100, marginBottom: 0, paddingBottom: 0 }} />
+                                <img src="https://i.imgur.com/GfDyFJE.png" style={{ width: "50%", height: "20%", marginTop: 100, marginBottom: 0, paddingBottom: 0 }} />
                             </div>
                         </div>
                     </div>

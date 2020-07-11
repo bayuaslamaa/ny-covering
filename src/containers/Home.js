@@ -6,6 +6,10 @@ import { FaInstagram } from 'react-icons/fa'
 import { IconContext } from "react-icons";
 import { GrInstagram } from 'react-icons/gr'
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faInstagram
+  } from "@fortawesome/free-brands-svg-icons";
 
 
 import CarouselHome1 from '../assets/CarouserHome1.jpeg'
@@ -83,23 +87,21 @@ const FooterPage = () => {
             <MDBContainer fluid className="text-center text-md-center">
                 <MDBRow>
                     <MDBCol md="5">
-                        <h4 className="title">Follow:</h4>
+                        {/* <h4 className="title">Follow:</h4>
                         <ul>
                             <li className="list-unstyled">
-                                <IconContext.Provider value={{ color: "grey", className: "global-class-name", size: "4em" }}>
+                                <IconContext.Provider value={{ color: "grey", className: "global-class-name", size: "2em" }}>
                                     <div>
                                         <a style={{ color: "black", fontSize: 20 }} href="https://www.instagram.com/ny.covering/"><GrInstagram />@ny.covering</a>
                                     </div>
                                 </IconContext.Provider>
 
                             </li>
-                            {/* <li className="list-unstyled">
-                                <a href="#!">Link 3</a>
-                            </li>
-                            <li className="list-unstyled">
-                                <a href="#!">Link 4</a>
-                            </li> */}
-                        </ul>
+                        </ul> */}
+                        <div className="follow" style={{width: 300, fontSize: 22}}>
+                        <a href="https://www.instagram.com/ny.covering/" style={{color:"black"}} >
+                        <FontAwesomeIcon icon={faInstagram} size="1x"/> follow @ny.covering
+                        </a></div>
                     </MDBCol>
                     <MDBCol md="8">
                         {/* <h5 className="title">You can find us at:</h5> */}
@@ -107,10 +109,13 @@ const FooterPage = () => {
                     </MDBCol>
                 </MDBRow>
             </MDBContainer>
-            <div className="footer-copyright text-center py-3">
+            {/* <div className="footer-copyright text-center py-3">
                 <MDBContainer fluid>
                     &copy; {new Date().getFullYear()} Copyright: Bayu Aslama
                 </MDBContainer>
+            </div> */}
+            <div>
+                <p></p>
             </div>
         </MDBFooter>
     );

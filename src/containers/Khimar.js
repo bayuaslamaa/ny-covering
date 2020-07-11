@@ -8,8 +8,9 @@ import ButtonOrder from '../components/ButtonOrder'
 import ModelBlue1 from '../assets/ModelBlue1.jpg'
 import ModelOlive1 from '../assets/ModelOlive1.jpg'
 import ModelPink1 from '../assets/ModelPink1.jpg'
-import OatVanilla from '../assets/OatVanilla.HEIC'
-import Nude from '../assets/Nude.HEIC'
+import OatVanilla from '../assets/OatVanilla.png'
+import Nude from '../assets/Nude.png'
+import Coffee from '../assets/Coffee.png'
 
 export default function Khimar(props) {
     const { misha } = props
@@ -17,7 +18,7 @@ export default function Khimar(props) {
     const orderNow = () => {
         console.log('hii')
     }
-    return (<div div className="container col-12" >
+    return (<div div className={`container col-${misha?12:9}`} >
         {
             misha ? (<CardDeck>
                 <Card>
@@ -83,15 +84,16 @@ export default function Khimar(props) {
 
 
             </CardDeck>) :
-                (<CardDeck className="col-12">
+                (<CardDeck>
                     <Card>
                         <Card.Img variant="top" src={OatVanilla} />
                         <Card.Body>
-                            <Card.Title>Baby Blue</Card.Title>
+                            <Card.Title>Misha Khimar - Oat Vanilla</Card.Title>
                             <Card.Text>
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
+                                Arabian Crepe HQ
                 </Card.Text>
+                <Card.Text>  Pet Antem & Kokoh</Card.Text>
+                            <Card.Text>    IDR 80.000</Card.Text>
                             <ButtonOrder />
                         </Card.Body>
                         <Card.Footer>
@@ -101,7 +103,7 @@ export default function Khimar(props) {
                     <Card>
                         <Card.Img variant="top" src={Nude} style={{ height: "42%" }} />
                         <Card.Body>
-                            <Card.Title>Misha Khimar</Card.Title>
+                            <Card.Title>Misha Khimar - Nude</Card.Title>
                             <Card.Text>
                                 Arabian Crepe HQ
                     </Card.Text>
@@ -114,9 +116,9 @@ export default function Khimar(props) {
                         </Card.Footer>
                     </Card>
                     <Card>
-                        <Card.Img variant="top" src={Nude} style={{ height: "42%" }} />
+                        <Card.Img variant="top" src={Coffee} style={{ height: "42%" }} />
                         <Card.Body>
-                            <Card.Title>Misha Khimar</Card.Title>
+                            <Card.Title>Misha Khimar - Coffee</Card.Title>
                             <Card.Text>
                                 Arabian Crepe HQ
                     </Card.Text>

@@ -18,9 +18,11 @@ export default function Abaya() {
                 <Card.Body>
                     <Card.Title style={{ fontSize: 18 }}>Misha Abaya - Nude Mocca</Card.Title>
                     <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-      </Card.Text>
+                                Arabian Crepe HQ
+                    </Card.Text>
+                            <Card.Text> Bahan bertekstur kulit jeruk yang empuk, stretch (agak melar ketika ditarik) dan jatuh.</Card.Text>
+                            <Card.Text>Model abaya A line dengan cutting free step (bebas melangkah)</Card.Text>
+                            <Card.Text>    IDR 80.000</Card.Text>
                     <Button onClick={orderNow}>Order Now</Button>
                 </Card.Body>
                 <Card.Footer onClick={() => console.log('hi')}>
