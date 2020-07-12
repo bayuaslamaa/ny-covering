@@ -5,18 +5,19 @@ import {
     Switch,
     Route
 } from 'react-router-dom'
-import { Dropdown } from 'react-bootstrap'
 import Home from '../containers/Home'
 import Khimar from '../containers/Khimar'
 import Abaya from '../containers/Abaya'
 import Package from '../containers/Package'
+import {Navbar} from 'react-bootstrap'
 
 
-export default function Navbar() {
+export default function NavbarPage() {
+
     return (
         <Router>
             <header>
-                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <Navbar className="navbar navbar-expand-lg navbar-light bg-light">
                     <div className="container">
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -27,7 +28,7 @@ export default function Navbar() {
                                 <div class="navbar-brand">
                                     <img src="https://i.imgur.com/08xO3m6.png" width="30" height="30" alt="" />
                                 </div>
-                                <li className="nav-item active">
+                                <li className="nav-item">
                                     <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                                 </li>
                                 <li className="nav-item">
@@ -52,14 +53,14 @@ export default function Navbar() {
                             </ul>
                         </div>
                     </div>
-                </nav>
+                </Navbar>
 
 
                 <div className="view intro-2">
                     <div className="full-bg-img">
                         <div className="mask rgba-black-strong flex-center">
                             <div className="container header">
-                                <img src="https://i.imgur.com/GfDyFJE.png" style={{ width: "50%", height: "20%", marginTop: 100, marginBottom: 0, paddingBottom: 0 }} />
+                                <img alt="nyco" src="https://i.imgur.com/GfDyFJE.png" style={{ width: "50%", height: "20%", marginTop: 100, marginBottom: 0, paddingBottom: 0 }} />
                             </div>
                         </div>
                     </div>

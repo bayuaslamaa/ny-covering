@@ -1,10 +1,7 @@
 import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { getProducts } from '../store/actions'
 import { Carousel } from 'react-bootstrap'
-import { FaInstagram } from 'react-icons/fa'
-import { IconContext } from "react-icons";
-import { GrInstagram } from 'react-icons/gr'
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -16,26 +13,16 @@ import CarouselHome1 from '../assets/CarouserHome1.jpeg'
 import CarouselHome2 from '../assets/CarouselHome2.png'
 import CarouselHome3 from '../assets/CarouselHome2.jpeg'
 
+// import ReactPixel from 'react-facebook-pixel'
 
-
-import ModelPink3 from '../assets/ModelPink3.jpg'
-import ModelBlue3 from '../assets/ModelBlue3.jpg'
-import ModelOlive3 from '../assets/ModelOlive3.jpg'
-
-import ModelPink4 from '../assets/ModelPink4.jpg'
-import ModelBlue4 from '../assets/ModelBlue4.jpg'
-import ModelOlive4 from '../assets/ModelOlive4.jpg'
-
-import ModelPink5 from '../assets/ModelPink5.jpg'
-import ModelBlue5 from '../assets/ModelBlue5.jpg'
-import ModelOlive5 from '../assets/ModelOlive5.jpg'
+// ReactPixel.init('235249274261502')
+// ReactPixel.pageView()
+// ReactPixel.track(event, data)
+// ReactPixel.trackSingle('235249274261502',event, data)
 
 
 export default function Home() {
     const dispatch = useDispatch()
-    const products = useSelector(state => state.products)
-    const khimar = useSelector(state => state.khimar)
-    const abaya = useSelector(state => state.abaya)
     useEffect(() => {
         dispatch(getProducts())
     }, [dispatch])
@@ -98,9 +85,9 @@ const FooterPage = () => {
 
                             </li>
                         </ul> */}
-                        <div className="follow" style={{width: 300, fontSize: 22}}>
+                        <div className="follow" style={{width: "100vw", fontSize: 44, backgroundColor:"#9C7A76"}}>
                         <a href="https://www.instagram.com/ny.covering/" style={{color:"black"}} >
-                        <FontAwesomeIcon icon={faInstagram} size="1x"/> follow @ny.covering
+                        <FontAwesomeIcon icon={faInstagram} size="1x"/> Follow Us
                         </a></div>
                     </MDBCol>
                     <MDBCol md="8">

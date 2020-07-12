@@ -1,9 +1,5 @@
-import React, { useState } from 'react'
-import { useSelector } from 'react-redux'
-import CardProduct from '../components/Card'
-import Khimar1 from '../assets/Khimar1.png'
-import Khimar2 from '../assets/Khimar2.jpg'
-import { CardDeck, Card, Button } from 'react-bootstrap'
+import React from 'react'
+import { CardDeck, Card} from 'react-bootstrap'
 import ButtonOrder from '../components/ButtonOrder'
 import ModelBlue1 from '../assets/ModelBlue1.jpg'
 import ModelOlive1 from '../assets/ModelOlive1.jpg'
@@ -11,13 +7,10 @@ import ModelPink1 from '../assets/ModelPink1.jpg'
 import OatVanilla from '../assets/OatVanilla.png'
 import Nude from '../assets/Nude.png'
 import Coffee from '../assets/Coffee.png'
+import Taupe from '../assets/Taupe.jpg'
 
 export default function Khimar(props) {
     const { misha } = props
-    const khimar = useSelector(state => state.khimar)
-    const orderNow = () => {
-        console.log('hii')
-    }
     return (<div div className={`container col-${misha?12:9}`} >
         {
             misha ? (<CardDeck>
@@ -33,7 +26,7 @@ export default function Khimar(props) {
                         <ButtonOrder />
                     </Card.Body>
                     <Card.Footer onClick={() => console.log('hi')}>
-                        <p className="text-muted">Stocks: 20</p>
+                        <p className="text-muted">Stocks: 14</p>
                     </Card.Footer>
                 </Card>
                 <Card>
@@ -48,7 +41,7 @@ export default function Khimar(props) {
                         <ButtonOrder />
                     </Card.Body>
                     <Card.Footer>
-                        <p className="text-muted">Stocks: 20</p>
+                        <p className="text-muted">Stocks: 1</p>
                     </Card.Footer>
                 </Card>
                 <Card>
@@ -63,11 +56,11 @@ export default function Khimar(props) {
                         <ButtonOrder />
                     </Card.Body>
                     <Card.Footer>
-                        <p className="text-muted">Stocks: 20</p>
+                        <p className="text-muted">Stocks: 14</p>
                     </Card.Footer>
                 </Card>
                 <Card>
-                    <Card.Img variant="top" src="https://i.imgur.com/uCT0LW7.png" />
+                    <Card.Img variant="top" src={Taupe} />
                     <Card.Body>
                         <Card.Title style={{ fontSize: 17 }}>Farhah Khimar - Light Taupe</Card.Title>
                         <Card.Text>
@@ -78,7 +71,7 @@ export default function Khimar(props) {
                         <ButtonOrder />
                     </Card.Body>
                     <Card.Footer>
-                        <p className="text-muted">Stocks: 20</p>
+                        <p className="text-muted">Stocks: 0</p>
                     </Card.Footer>
                 </Card>
 
@@ -112,7 +105,7 @@ export default function Khimar(props) {
                             <ButtonOrder />
                         </Card.Body>
                         <Card.Footer>
-                            <p className="text-muted">Stocks: 20</p>
+                            <p className="text-muted">Stocks: 50</p>
                         </Card.Footer>
                     </Card>
                     <Card>
@@ -127,7 +120,7 @@ export default function Khimar(props) {
                             <ButtonOrder />
                         </Card.Body>
                         <Card.Footer>
-                            <p className="text-muted">Stocks: 20</p>
+                            <p className="text-muted">Stocks: 30</p>
                         </Card.Footer>
                     </Card>
 
