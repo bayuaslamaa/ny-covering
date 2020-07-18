@@ -1,13 +1,17 @@
 import React from 'react'
 import { CardDeck, Card } from 'react-bootstrap'
 import ButtonOrder from '../components/ButtonOrder'
+import setMoccaNude from '../assets/SetMoccaNude.jpg'
+import setNudeMocca from '../assets/setNudeMocca.jpg'
+import setDustyPink from '../assets/setDustyPink.jpg'
+
 
 export default () => {
     return (
         <div div className="container col-9" >
             <CardDeck>
                 <Card>
-                    <Card.Img variant="top" src="https://i.imgur.com/GiHiRYr.jpg" />
+                    <Card.Img variant="top" src={setMoccaNude} />
                     <Card.Body>
                         <Card.Title>Misha Set - Mocca Nude</Card.Title>
                         <Card.Text>
@@ -23,7 +27,7 @@ export default () => {
                     </Card.Footer>
                 </Card>
                 <Card>
-                    <Card.Img variant="top" src="https://i.imgur.com/54PkCdU.jpg" />
+                    <Card.Img variant="top" src={setDustyPink} />
                     <Card.Body>
                     <Card.Title>Misha Set - Dusty Pink Vanilla</Card.Title>
                         <Card.Text>
@@ -39,7 +43,7 @@ export default () => {
                     </Card.Footer>
                 </Card>
                 <Card>
-                    <Card.Img variant="top" src="https://i.imgur.com/GKJ5Nt6.jpg" />
+                    <Card.Img variant="top" src={setNudeMocca} />
                     <Card.Body>
                     <Card.Title>Misha Set - Nude Mocca</Card.Title>
                         <Card.Text>

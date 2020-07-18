@@ -6,10 +6,13 @@ import {
     Route
 } from 'react-router-dom'
 import Home from '../containers/Home'
-import Khimar from '../containers/Khimar'
 import Abaya from '../containers/Abaya'
 import Package from '../containers/Package'
 import {Navbar} from 'react-bootstrap'
+import Misha from '../containers/Misha'
+import Farhah from '../containers/Khimar'
+import logo from '../assets/logo.png'
+import nyco from '../assets/nyco.png'
 
 
 export default function NavbarPage() {
@@ -26,7 +29,7 @@ export default function NavbarPage() {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-auto" style={{ flex: 1, justifyContent: "space-between" }}>
                                 <div class="navbar-brand">
-                                    <img src="https://i.imgur.com/08xO3m6.png" width="30" height="30" alt="" />
+                                    <img src={logo} width="30" height="30" alt="" />
                                 </div>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
@@ -60,7 +63,7 @@ export default function NavbarPage() {
                     <div className="full-bg-img">
                         <div className="mask rgba-black-strong flex-center">
                             <div className="container header">
-                                <img alt="nyco" src="https://i.imgur.com/GfDyFJE.png" style={{ width: "50%", height: "20%", marginTop: 100, marginBottom: 0, paddingBottom: 0 }} />
+                                <img alt="nyco" src={nyco} style={{ width: "50%", height: "20%", marginTop: 100, marginBottom: 0, paddingBottom: 0 }} />
                             </div>
                         </div>
                     </div>
@@ -69,10 +72,10 @@ export default function NavbarPage() {
 
             <Switch>
                 <Route exact path="/"><Home /></Route>
-                <Route path="/farhah"><Khimar misha={true} /></Route>
-                <Route path="/misha"><Khimar misha={false} /></Route>
+                <Route path="/farhah"><Farhah  /></Route>
+                <Route path="/misha"><Misha  /></Route>
                 <Route path="/abaya"><Abaya /></Route>
-                <Route path="/order"><h1>Order</h1></Route>
+                {/* <Route path="/order"><h1>Order</h1></Route> */}
                 <Route path="/set"><Package /></Route>
             </Switch>
         </Router>

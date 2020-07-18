@@ -9,16 +9,10 @@ import {
   } from "@fortawesome/free-brands-svg-icons";
 
 
-import CarouselHome1 from '../assets/CarouserHome1.jpeg'
-import CarouselHome2 from '../assets/CarouselHome2.png'
-import CarouselHome3 from '../assets/CarouselHome2.jpeg'
+import CarouselHome1 from '../assets/CarouserHome1.jpg'
+import CarouselHome2 from '../assets/CarouselHome2.jpg'
+import CarouselHome3 from '../assets/CarouselHome3.jpg'
 
-// import ReactPixel from 'react-facebook-pixel'
-
-// ReactPixel.init('235249274261502')
-// ReactPixel.pageView()
-// ReactPixel.track(event, data)
-// ReactPixel.trackSingle('235249274261502',event, data)
 
 
 export default function Home() {
