@@ -1,10 +1,7 @@
 import React from 'react'
-import Abaya1 from '../assets/AbayaNudeMocca.jpg'
-import Abaya2 from '../assets/AbayaMoccaNude.jpg'
-import Abaya3 from '../assets/AbayaDustyPink.jpg'
 import { CardDeck, Card } from 'react-bootstrap'
-import ButtonOrder from '../components/ButtonOrder'
-// import ReactPixel from 'react-facebook-pixel'
+import ButtonOrder from '../components/ButtonCart'
+import {useSelector} from 'react-redux'
 
 // ReactPixel.init('235249274261502')
 // ReactPixel.pageView()
@@ -14,11 +11,13 @@ import ButtonOrder from '../components/ButtonOrder'
 
 
 export default function Abaya() {
-   
+    const item7 = useSelector(state => state.items[6].img)
+    const item8 = useSelector(state => state.items[7].img)
+    const item9 = useSelector(state => state.items[8].img)
     return (<div div className="container col-9" >
         <CardDeck>
             <Card>
-                <Card.Img variant="top" src={Abaya1} />
+                <Card.Img variant="top" src={item7} />
                 <Card.Body>
                     <Card.Title style={{ fontSize: 18 }}>Misha Abaya - Nude Mocca</Card.Title>
                     <Card.Text>
@@ -32,14 +31,14 @@ export default function Abaya() {
                             <Card.Text>READY STOCK</Card.Text>
                             <Card.Text>Size S LD 94 cm & PB 133 cm</Card.Text>
                             <Card.Text>    IDR 150.000</Card.Text>
-                    <ButtonOrder/>
+                    <ButtonOrder id={7}/>
                 </Card.Body>
-                <Card.Footer onClick={() => console.log('hi')}>
+                <Card.Footer>
                     <small className="text-muted">Stocks: 20</small>
                 </Card.Footer>
             </Card>
             <Card>
-                <Card.Img variant="top" src={Abaya2} />
+                <Card.Img variant="top" src={item8} />
                 <Card.Body>
                     <Card.Title style={{ fontSize: 18 }}>Misha Abaya - Mocca Nude</Card.Title>
                     <Card.Text>
@@ -53,14 +52,14 @@ export default function Abaya() {
                             <Card.Text>READY STOCK</Card.Text>
                             <Card.Text>Size S LD 94 cm & PB 133 cm</Card.Text>
                             <Card.Text>    IDR 150.000</Card.Text>
-                    <ButtonOrder/>
+                    <ButtonOrder id={8}/>
                 </Card.Body>
                 <Card.Footer>
                     <small className="text-muted">Stocks: 20</small>
                 </Card.Footer>
             </Card>
             <Card>
-                <Card.Img variant="top" src={Abaya3} />
+                <Card.Img variant="top" src={item9} />
                 <Card.Body>
                     <Card.Title style={{ fontSize: 18 }}>Misha Abaya - Dusty Pink Vanilla</Card.Title>
                     <Card.Text>
@@ -75,7 +74,7 @@ export default function Abaya() {
                             <Card.Text>Size S LD 94 cm & PB 133 cm</Card.Text>
                             <Card.Text>Size M LD 96 cm & PB 136 cm</Card.Text>
                             <Card.Text>    IDR 150.000</Card.Text>
-                   <ButtonOrder/>
+                   <ButtonOrder id={9}/>
                 </Card.Body>
                 <Card.Footer>
                     <small className="text-muted">Stocks: 20</small>

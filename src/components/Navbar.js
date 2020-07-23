@@ -8,15 +8,18 @@ import {
 import Home from '../containers/Home'
 import Abaya from '../containers/Abaya'
 import Package from '../containers/Package'
-import {Navbar} from 'react-bootstrap'
+import { Navbar } from 'react-bootstrap'
 import Misha from '../containers/Misha'
 import Farhah from '../containers/Khimar'
 import logo from '../assets/logo.png'
 import nyco from '../assets/nyco.png'
-
+import Cart from '../containers/Cart'
+import Confirmation from '../containers/Confirmation'
+import { MDBIcon } from 'mdbreact'
+import {useSelector} from 'react-redux'
 
 export default function NavbarPage() {
-
+    const addedItems = useSelector(state => state.addedItems)
     return (
         <Router>
             <header>
@@ -28,27 +31,31 @@ export default function NavbarPage() {
 
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-auto" style={{ flex: 1, justifyContent: "space-between" }}>
-                                <div class="navbar-brand">
+                                <div className="navbar-brand">
                                     <img src={logo} width="30" height="30" alt="" />
                                 </div>
+                                {
+                                    addedItems.length ? ( <li className="nav-item" style={{backgroundColor: "sandybrown", }}>
+                                    <Link title="CEK KERANJANG" className="nav-link" to="/cart" style={{color: "white"}}><MDBIcon icon="shopping-cart" /> Keranjang Kamu</Link>
+                                </li>) : (<></>)
+                                }
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/farhah">Farhah</Link>
+                                    <Link className="nav-link" to="/farhah">Farhah Khimar</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/misha">Misha</Link>
+                                    <Link className="nav-link" to="/misha">Misha Khimar</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/abaya">Abaya</Link>
+                                    <Link className="nav-link" to="/abaya">Misha Abaya</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/set">Set</Link>
+                                    <Link className="nav-link" to="/set">Misha Set</Link>
                                 </li>
-                                {/* <li className="nav-item">
-                                    <Link className="nav-link" to="/order">Order</Link>
-                                </li> */}
+                             
+                               
                                 {/* <form className="form-inline my-2 my-lg-0">
                                     <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
                                     <button className="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
@@ -75,8 +82,9 @@ export default function NavbarPage() {
                 <Route path="/farhah"><Farhah  /></Route>
                 <Route path="/misha"><Misha  /></Route>
                 <Route path="/abaya"><Abaya /></Route>
-                {/* <Route path="/order"><h1>Order</h1></Route> */}
+                <Route path="/cart"><Cart/> </Route>
                 <Route path="/set"><Package /></Route>
+                <Route path="/confirm"><Confirmation/></Route>
             </Switch>
         </Router>
     )
