@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import ReactPixel from 'react-facebook-pixel'
 import {useSelector} from 'react-redux'
 import { CardDeck, Card} from 'react-bootstrap'
 import ButtonAddCart from '../components/ButtonCart' 
 
 export default function Misha() {
+    useEffect(()=>{
+        ReactPixel.init("614220549496198")
+        ReactPixel.track("ViewContent")
+      }, [])
     const item4 = useSelector(state => state.items[3].img)
     const item5 = useSelector(state => state.items[4].img)
     const item6 = useSelector(state => state.items[5].img)

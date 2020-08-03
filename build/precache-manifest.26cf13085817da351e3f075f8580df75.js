@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9032398e39808a4059043cc6c29dad21",
+    "revision": "14da157101a80ad2a39d7dc4f3892ce9",
     "url": "/index.html"
   },
   {
-    "revision": "2e6180d9915f4fc25e4e",
+    "revision": "27607891a961a70b560e",
     "url": "/static/css/2.6b0f9ba9.chunk.css"
   },
   {
-    "revision": "f111eaa44253e40c07d3",
+    "revision": "3b7d0746f9a10b23d8b4",
     "url": "/static/css/main.1fed9566.chunk.css"
   },
   {
-    "revision": "2e6180d9915f4fc25e4e",
-    "url": "/static/js/2.a0297c12.chunk.js"
+    "revision": "27607891a961a70b560e",
+    "url": "/static/js/2.a3261127.chunk.js"
   },
   {
     "revision": "d2966845b94a3318bf32eecc7af8015d",
-    "url": "/static/js/2.a0297c12.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.a3261127.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f111eaa44253e40c07d3",
-    "url": "/static/js/main.fd16134f.chunk.js"
+    "revision": "3b7d0746f9a10b23d8b4",
+    "url": "/static/js/main.da8995a7.chunk.js"
   },
   {
     "revision": "3d250d420095f1e340d6",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/AbayaNudeMocca.8e1a6c94.jpg"
   },
   {
-    "revision": "2ccfc4691766bb9f043c426c6799f547",
-    "url": "/static/media/BabyBlue.2ccfc469.jpg"
+    "revision": "f766682968a28c2d540ca31f892612e4",
+    "url": "/static/media/BabyBlue.f7666829.jpg"
   },
   {
     "revision": "b1ce94e212eb4edbeb8154095c0a9fa2",
@@ -56,24 +56,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/CarouserHome1.e242ca83.jpg"
   },
   {
-    "revision": "35a540d436f6fbffc84c951469f1c581",
-    "url": "/static/media/Coffee.35a540d4.jpg"
+    "revision": "5ab496556b3cb556da41bfe9451602bd",
+    "url": "/static/media/Coffee.5ab49655.jpg"
   },
   {
-    "revision": "13e63ac442d2af8f41daf27c1cb52267",
-    "url": "/static/media/ModelOlive.13e63ac4.jpg"
+    "revision": "e980423b10b578ce07c58ff42776d77c",
+    "url": "/static/media/ModelOlive.e980423b.jpg"
   },
   {
-    "revision": "109942fa37a15be31f52924353cabc49",
-    "url": "/static/media/ModelPink.109942fa.jpg"
+    "revision": "97eb30729bd3d3b06d188dfd30f19c14",
+    "url": "/static/media/ModelPink.97eb3072.jpg"
   },
   {
-    "revision": "4f72ee8f626f99b39384d46938887b7c",
-    "url": "/static/media/Nude.4f72ee8f.jpg"
+    "revision": "73b16e5048fd1a16bb3a39b8f8b5ebdf",
+    "url": "/static/media/Nude.73b16e50.jpg"
   },
   {
-    "revision": "faf80e1abed9ceef7dedba88ed5ce96b",
-    "url": "/static/media/OatVanilla.faf80e1a.jpg"
+    "revision": "4a4ce6af18f08aeecb6bd7d442b553ef",
+    "url": "/static/media/OatVanilla.4a4ce6af.jpg"
   },
   {
     "revision": "7cff704fd5a8239d9d65f798236353e9",

@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import ReactPixel from 'react-facebook-pixel'
 import { CardDeck, Card } from 'react-bootstrap'
 import ButtonOrder from '../components/ButtonCart'
 import {useSelector} from 'react-redux'
@@ -11,6 +12,10 @@ import {useSelector} from 'react-redux'
 
 
 export default function Abaya() {
+    useEffect(()=>{
+        ReactPixel.init("614220549496198")
+        ReactPixel.track("ViewContent")
+      }, [])
     const item7 = useSelector(state => state.items[6].img)
     const item8 = useSelector(state => state.items[7].img)
     const item9 = useSelector(state => state.items[8].img)

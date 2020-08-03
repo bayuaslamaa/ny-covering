@@ -1,13 +1,20 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import ReactPixel from 'react-facebook-pixel'
 import { useSelector} from 'react-redux'
 import { CardDeck, Card} from 'react-bootstrap'
 import ButtonAddCart from '../components/ButtonCart' 
 
 
+
 export default function Farhah() {
+    useEffect(()=>{
+        ReactPixel.init("614220549496198")
+        ReactPixel.track("ViewContent")
+      }, [])
     const item1 = useSelector(state => state.items[0])
     const item2 = useSelector(state => state.items[1])
     const item3 = useSelector(state => state.items[2])
+    // const state = useSelector(state => state)
    
     return (<div className={`container col-${9}`} >
        <CardDeck>
@@ -39,7 +46,7 @@ export default function Farhah() {
                         <ButtonAddCart id={2}/>
                     </Card.Body>
                     <Card.Footer >
-                        <p className="text-muted">Stocks: 1</p>
+                        <p className="text-muted">Stocks: 0 (Restock Soon)</p>
                     </Card.Footer>
                 </Card>
                 <Card>

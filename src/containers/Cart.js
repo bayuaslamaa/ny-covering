@@ -1,10 +1,17 @@
-import React from 'react'
-import {useSelector} from 'react-redux'
-// import {removeCart, addQuantity, addToCart, setShippingPrice}  from '../store/actions'
+import React, {useEffect} from 'react'
+import ReactPixel from 'react-facebook-pixel'
+import {useSelector, useDispatch} from 'react-redux'
+import {removeCart}  from '../store/actions'
 import { Button, Card, CardDeck} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { MDBIcon } from 'mdbreact'
 
 export default function Cart () {
+    useEffect(()=>{
+        ReactPixel.init("614220549496198")
+        ReactPixel.track("AddToCart")
+     }, [])
+    const dispatch = useDispatch()
     const addedItems = useSelector(state => state.addedItems)
 
     let items = addedItems.length ? (addedItems.map(item => {
@@ -33,6 +40,9 @@ export default function Cart () {
         <Card.Text>    IDR {item.price} /pcs</Card.Text>
         <b>Jumlah: {item.quantity} pcs</b> 
                     </Card.Body>
+                    <Card.Footer>
+                        <Button variant="light" style={{backgroundColor:"#9C7A76", color: "white"}} onClick={()=> dispatch(removeCart(item.id))}><MDBIcon size="3x" icon="trash" /></Button>
+                    </Card.Footer>
                 </Card>
       
        </>                      
@@ -44,6 +54,7 @@ export default function Cart () {
     )
     return(
         <div className="container col-12">
+          
             <div className="cart"  >
                 <div style={{marginTop: 0, paddingTop: 0, marginBottom: 65}}>
                 <h1>Pesanan Kamu:</h1>

@@ -27,7 +27,7 @@
     <!-- <link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/08xO3m6.png" /> -->
     <title>NY.co - Abaya & Khimar</title>
      <!-- Facebook Pixel Code -->
-     <script>
+     <!-- <script>
       !function(f,b,e,v,n,t,s)
        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -37,11 +37,21 @@
       s.parentNode.insertBefore(t,s)}(window, document,'script',
      'https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '235249274261502');
-      fbq('track', 'PageView');
+      // fbq('track', 'PageView');
+      fbq('track', 'ViewContent', {
+        content_type: 'product',
+        content_ids: ['1', '2', '3', '4', '5', '6']
+      })
+      fbq('track', 'AddToCart', {
+        value: 100000,
+        currency: 'IDR',
+        content_type: 'product',
+        content_ids: ['1', '2', '3', '4', '5', '6']
+      });
  </script>
  <noscript><img height="1" width="1" style="display:none"
      src="https://www.facebook.com/tr?id=235249274261502&ev=PageView&noscript=1"
- /></noscript>
+ /></noscript> -->
  <!-- End Facebook Pixel Code -->
   </head>
   <body>

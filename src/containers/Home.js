@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 // import { useDispatch } from 'react-redux'
 import { Carousel } from 'react-bootstrap'
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
@@ -6,6 +6,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 // import {
 //     faInstagram
 //   } from "@fortawesome/free-brands-svg-icons";
+import ReactPixel from 'react-facebook-pixel'
 
 
 import CarouselHome1 from '../assets/CarouserHome1.jpg'
@@ -15,6 +16,10 @@ import CarouselHome3 from '../assets/CarouselHome3.jpg'
 
 
 export default function Home() {
+    useEffect(()=>{
+       ReactPixel.init("614220549496198")
+       ReactPixel.pageView()
+    }, [])
     return (
         <>
             <div className="container" style={{ display: "flex", flexDirection: 'row', flexWrap: "wrap", justifyContent: "space-evenly", height: 120 }}>

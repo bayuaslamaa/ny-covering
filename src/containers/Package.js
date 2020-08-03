@@ -1,10 +1,15 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import ReactPixel from 'react-facebook-pixel'
 import { CardDeck, Card } from 'react-bootstrap'
 import { useSelector } from 'react-redux'
 import ButtonOrder from '../components/ButtonCart'
 
 
 export default () => {
+    useEffect(()=>{
+        ReactPixel.init("614220549496198")
+        ReactPixel.track("ViewContent")
+      }, [])
     const item10 = useSelector(state => state.items[9].img)
     const item11 = useSelector(state => state.items[10].img)
     const item12 = useSelector(state => state.items[11].img)

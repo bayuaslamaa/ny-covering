@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom'
 import Home from '../containers/Home'
 import Abaya from '../containers/Abaya'
-import Package from '../containers/Package'
+// import Package from '../containers/Package'
 import { Navbar } from 'react-bootstrap'
 import Misha from '../containers/Misha'
 import Farhah from '../containers/Khimar'
@@ -51,10 +51,10 @@ export default function NavbarPage() {
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/abaya">Misha Abaya</Link>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <Link className="nav-link" to="/set">Misha Set</Link>
                                 </li>
-                             
+                              */}
                                
                                 {/* <form className="form-inline my-2 my-lg-0">
                                     <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
@@ -83,7 +83,7 @@ export default function NavbarPage() {
                 <Route path="/misha"><Misha  /></Route>
                 <Route path="/abaya"><Abaya /></Route>
                 <Route path="/cart"><Cart/> </Route>
-                <Route path="/set"><Package /></Route>
+                {/* <Route path="/set"><Package /></Route> */}
                 <Route path="/confirm"><Confirmation/></Route>
             </Switch>
         </Router>
