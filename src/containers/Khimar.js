@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import {envi} from "../config"
 import ReactPixel from 'react-facebook-pixel'
 import { useSelector} from 'react-redux'
 import { CardDeck, Card} from 'react-bootstrap'
@@ -7,9 +8,11 @@ import ButtonAddCart from '../components/ButtonCart'
 
 
 export default function Farhah() {
-    useEffect(()=>{
-        ReactPixel.init("614220549496198")
-        ReactPixel.track("ViewContent")
+    useEffect(()=>{    
+        if (envi === "production") {
+            ReactPixel.init("614220549496198")
+            ReactPixel.track("ViewContent")
+        }
       }, [])
     const item1 = useSelector(state => state.items[0])
     const item2 = useSelector(state => state.items[1])

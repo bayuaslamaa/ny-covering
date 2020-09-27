@@ -4,15 +4,19 @@ import { useSelector } from 'react-redux'
 import { Card, Button , CardDeck} from 'react-bootstrap'
 import ButtonOrder from '../components/ButtonOrder' 
 import { MDBIcon } from 'mdbreact'
+import {envi} from "../config"
+
 
 export default () => {
   const total = useSelector(state => state.total)
   useEffect(()=>{
+        if(envi === "production") {
         ReactPixel.init("614220549496198")
         ReactPixel.track("Purchase", {
           value: total.toFixed(2),
           currency: 'IDR'
         })
+       }
   }, [total])
     const addedItems = useSelector(state => state.addedItems)
     const [isConfirmed, confirm] = useState(false)

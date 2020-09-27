@@ -7,8 +7,9 @@ import {
 } from 'react-router-dom'
 import Home from '../containers/Home'
 import Abaya from '../containers/Abaya'
+import Zara from '../containers/Zara'
 // import Package from '../containers/Package'
-import { Navbar } from 'react-bootstrap'
+import { Navbar, NavDropdown } from 'react-bootstrap'
 import Misha from '../containers/Misha'
 import Farhah from '../containers/Khimar'
 import logo from '../assets/logo.png'
@@ -51,16 +52,23 @@ export default function NavbarPage() {
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/abaya">Misha Abaya</Link>
                                 </li>
-                                {/* <li className="nav-item">
-                                    <Link className="nav-link" to="/set">Misha Set</Link>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/zara-color">Zara</Link>
                                 </li>
-                              */}
+                             
                                
                                 {/* <form className="form-inline my-2 my-lg-0">
                                     <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
                                     <button className="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
                                 </form> */}
                             </ul>
+                            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+      </NavDropdown>
                         </div>
                     </div>
                 </Navbar>
@@ -83,7 +91,7 @@ export default function NavbarPage() {
                 <Route path="/misha"><Misha  /></Route>
                 <Route path="/abaya"><Abaya /></Route>
                 <Route path="/cart"><Cart/> </Route>
-                {/* <Route path="/set"><Package /></Route> */}
+                <Route path="/zara-color"><Zara /></Route>
                 <Route path="/confirm"><Confirmation/></Route>
             </Switch>
         </Router>

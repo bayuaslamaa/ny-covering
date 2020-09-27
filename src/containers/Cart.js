@@ -5,11 +5,15 @@ import {removeCart}  from '../store/actions'
 import { Button, Card, CardDeck} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { MDBIcon } from 'mdbreact'
+import {envi} from "../config"
+
 
 export default function Cart () {
     useEffect(()=>{
+        if (envi === "production"){
         ReactPixel.init("614220549496198")
         ReactPixel.track("AddToCart")
+        }
      }, [])
     const dispatch = useDispatch()
     const addedItems = useSelector(state => state.addedItems)

@@ -23,9 +23,9 @@ const initialState = {
         {id: 7, name: 'Misha Abaya - Nude Mocca', price: 150000, qty: 0, img: Abaya1},
         {id: 8, name: 'Misha Abaya - Mocca Nude', price: 150000, qty: 0, img: Abaya2},
         {id: 9, name: 'Misha Abaya - Dusty Pink Vanilla', price: 150000, qty: 0, img: Abaya3},
-        {id: 10, name: 'Misha Khimar - Nude', price: 250000, qty: 0, img: setMoccaNude},
-        {id:11, name: 'Misha Khimar - Oat Vanilla', price: 250000, qty: 0, img: setNudeMocca},
-        {id: 12, name: 'Misha Khimar - Coffee', price: 250000, qty: 0, img: setDustyPink},
+        {id: 10, name: 'Misha Set - Mocca Nude', price: 250000, qty: 0, img: setMoccaNude},
+        {id:11, name: 'Misha Abaya - Nude Mocca', price: 250000, qty: 0, img: setNudeMocca},
+        {id: 12, name: 'Misha Set - Dusty Pink Vanilla', price: 250000, qty: 0, img: setDustyPink},
     ],
     addedItems: [],
     total: 0

@@ -1,18 +1,22 @@
 import React, {useEffect} from 'react'
 import ReactPixel from 'react-facebook-pixel'
+import {envi} from "../config"
 import {useSelector} from 'react-redux'
 import { CardDeck, Card} from 'react-bootstrap'
 import ButtonAddCart from '../components/ButtonCart' 
 
 export default function Misha() {
+
     useEffect(()=>{
-        ReactPixel.init("614220549496198")
-        ReactPixel.track("ViewContent")
+        if(envi === "production") {
+            ReactPixel.init("614220549496198")
+            ReactPixel.track("ViewContent")
+        }
       }, [])
     const item4 = useSelector(state => state.items[3].img)
     const item5 = useSelector(state => state.items[4].img)
     const item6 = useSelector(state => state.items[5].img)
-    return (<div div className={`container col-${9}`} >
+    return (<div  className={`container col-${9}`} >
         <CardDeck>
                     
                     <Card>

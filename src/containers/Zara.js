@@ -8,8 +8,7 @@ import { envi } from '../config'
 
 
 
-export default function Abaya() {
-    console.log(">>", envi)
+export default function Zara() {
     useEffect(()=>{
         ReactPixel.init("614220549496198")
         ReactPixel.track("ViewContent")
