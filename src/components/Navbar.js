@@ -8,13 +8,15 @@ import {
 import Home from '../containers/Home'
 import Abaya from '../containers/Abaya'
 import Zara from '../containers/Zara'
+import ZaraBlack from '../containers/ZaraBlack'
 // import Package from '../containers/Package'
-import { Navbar, NavDropdown } from 'react-bootstrap'
+import { Navbar, NavDropdown,  Badge } from 'react-bootstrap'
 import Misha from '../containers/Misha'
 import Farhah from '../containers/Khimar'
 import logo from '../assets/logo.png'
 import nyco from '../assets/nyco.png'
 import Cart from '../containers/Cart'
+import Cadar from '../containers/Cadar'
 import Confirmation from '../containers/Confirmation'
 import { MDBIcon } from 'mdbreact'
 import {useSelector} from 'react-redux'
@@ -44,31 +46,66 @@ export default function NavbarPage() {
                                     <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/farhah">Farhah Khimar</Link>
+                                    <NavDropdown title="New!" id="basic-nav-dropdown" >
+                                        <Link className="nav-link" to="/cadar-farhah">
+                                            Cadar Farhah
+                                        </Link>
+
+                                    <NavDropdown.Divider />
+                                         <Link className="nav-link" to="/zara-color">Zara Abaya {<p style={{color: "#9C7A76"}}>color series</p>}</Link>
+                                 
+                                    <NavDropdown.Divider />
+                                        <Link className="nav-link" to="/zara-black">Zara Abaya {<p style={{color: "#9C7A76"}}>black series</p>}</Link>
+
+                                        <NavDropdown.Divider />
+                                         <Link className="nav-link" to="/farhah">Farhah Khimar <Badge pill variant="warning">New Item </Badge></Link>
+                                    </NavDropdown>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/misha">Misha Khimar</Link>
+                                    <NavDropdown title="Khimar" id="basic-nav-dropdown">
+                                        {/* <NavDropdown.Item> */}
+                            <Link className="nav-link" to="/farhah">Farhah Khimar </Link>
+                                        <NavDropdown.Divider />
+                                        {/* <NavDropdown.Item> */}
+                                            <Link className="nav-link" to="/misha">Misha Khimar </Link>
+                                        {/* </NavDropdown.Item> */}
+                                    </NavDropdown>
                                 </li>
                                 <li className="nav-item">
+                                <NavDropdown title="Abaya" id="basic-nav-dropdown">
+                                     
+                                            <Link className="nav-link" to="/abaya">Misha Abaya</Link>
+                                      
+                                    <NavDropdown.Divider />
+                                         <Link className="nav-link" to="/zara-color">Zara Abaya {<p style={{color: "#9C7A76"}}>color series</p>}</Link>
+                                 
+                                    <NavDropdown.Divider />
+                                        <Link className="nav-link" to="/zara-black">Zara Abaya{<p style={{color: "#9C7A76"}}>black series</p>}</Link>
+                                </NavDropdown>
+                                </li>
+                                <li className="nav-item">
+                                    <NavDropdown title="Cadar" id="basic-nav-dropdown">
+                                        <Link className="nav-link" to="/cadar-farhah">
+                                            Cadar Farhah
+                                        </Link>
+                                    </NavDropdown>
+                                </li>
+                                
+                                {/* <li className="nav-item">
                                     <Link className="nav-link" to="/abaya">Misha Abaya</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/zara-color">Zara</Link>
                                 </li>
-                             
+                              */}
                                
                                 {/* <form className="form-inline my-2 my-lg-0">
                                     <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
                                     <button className="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
                                 </form> */}
+                                {addedItems.length ? <li></li> : <li></li>}
                             </ul>
-                            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
+                          
                         </div>
                     </div>
                 </Navbar>
@@ -92,6 +129,8 @@ export default function NavbarPage() {
                 <Route path="/abaya"><Abaya /></Route>
                 <Route path="/cart"><Cart/> </Route>
                 <Route path="/zara-color"><Zara /></Route>
+                <Route path="/zara-black"><ZaraBlack /></Route>
+                <Route path="/cadar-farhah"><Cadar /></Route>
                 <Route path="/confirm"><Confirmation/></Route>
             </Switch>
         </Router>

@@ -16,7 +16,7 @@ export default function Misha() {
     const item4 = useSelector(state => state.items[3].img)
     const item5 = useSelector(state => state.items[4].img)
     const item6 = useSelector(state => state.items[5].img)
-    return (<div  className={`container col-${9}`} >
+    return (<div  className={`container col-${9}`} style={{marginBottom: 40}} >
         <CardDeck>
                     
                     <Card>
@@ -42,9 +42,9 @@ export default function Misha() {
                             <Card.Text>    IDR 100,000</Card.Text>
                             <ButtonAddCart id={4} />
                         </Card.Body>
-                        <Card.Footer>
+                        {/* <Card.Footer>
                             <p className="text-muted">Stocks: 50</p>
-                        </Card.Footer>
+                        </Card.Footer> */}
                     </Card>
                     <Card>
                         <Card.Img variant="top" src={item5} />
@@ -61,9 +61,9 @@ export default function Misha() {
                             <Card.Text>    IDR 100.000</Card.Text>
                             <ButtonAddCart id={5} />
                         </Card.Body>
-                        <Card.Footer>
+                        {/* <Card.Footer>
                             <p className="text-muted">Stocks: 20</p>
-                        </Card.Footer>
+                        </Card.Footer> */}
                     </Card>
                     <Card>
                         <Card.Img variant="top" src={item6}  />
@@ -80,9 +80,9 @@ export default function Misha() {
                             <Card.Text>    IDR 100.000</Card.Text>
                             <ButtonAddCart id={6} />
                         </Card.Body>
-                        <Card.Footer>
+                        {/* <Card.Footer>
                             <p className="text-muted">Stocks: 30</p>
-                        </Card.Footer>
+                        </Card.Footer> */}
                     </Card>
 
 

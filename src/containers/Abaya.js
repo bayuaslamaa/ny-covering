@@ -36,9 +36,9 @@ export default function Abaya() {
                             <Card.Text>    IDR 150.000</Card.Text>
                     <ButtonOrder id={7}/>
                 </Card.Body>
-                <Card.Footer>
+                {/* <Card.Footer>
                     <small className="text-muted">Stocks: 20</small>
-                </Card.Footer>
+                </Card.Footer> */}
             </Card>
             <Card>
                 <Card.Img variant="top" src={item8} />
@@ -57,9 +57,9 @@ export default function Abaya() {
                             <Card.Text>    IDR 150.000</Card.Text>
                     <ButtonOrder id={8}/>
                 </Card.Body>
-                <Card.Footer>
+                {/* <Card.Footer>
                     <small className="text-muted">Stocks: 20</small>
-                </Card.Footer>
+                </Card.Footer> */}
             </Card>
             <Card>
                 <Card.Img variant="top" src={item9} />
@@ -79,9 +79,9 @@ export default function Abaya() {
                             <Card.Text>    IDR 150.000</Card.Text>
                    <ButtonOrder id={9}/>
                 </Card.Body>
-                <Card.Footer>
+                {/* <Card.Footer>
                     <small className="text-muted">Stocks: 20</small>
-                </Card.Footer>
+                </Card.Footer> */}
             </Card>
 
         </CardDeck>

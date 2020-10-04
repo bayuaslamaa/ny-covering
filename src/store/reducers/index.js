@@ -11,6 +11,24 @@ import Abaya3 from '../../assets/AbayaDustyPink.jpg'
 import setMoccaNude from '../../assets/SetMoccaNude.jpg'
 import setNudeMocca from '../../assets/setNudeMocca.jpg'
 import setDustyPink from '../../assets/setDustyPink.jpg'
+import ZaraLilac from '../../assets/ZaraLilac.jpg'
+import ZaraOlive from '../../assets/ZaraOlive.jpg'
+import ZaraFossil from '../../assets/ZaraFossil.jpg'
+import ZaraMilky from '../../assets/ZaraMilky.jpg'
+import ZaraBrownie from '../../assets/ZaraBrownie.jpg'
+import BlackLilac from '../../assets/BlackLilac.jpg'
+import BlackOlive from '../../assets/BlackOlive.jpg'
+import BlackFossil from '../../assets/BlackFossil.jpg'
+import BlackMilky from '../../assets/BlackMilky.jpg'
+import BlackBrownie from '../../assets/BlackBrownie.jpg'
+import BlackMustard from '../../assets/BlackMustard.jpg'
+import BlackArmy from '../../assets/BlackArmy.jpg'
+import BlackDarkMustard from '../../assets/BlackDarkMustard.jpg'
+import PeachBeige from '../../assets/PeachBeige.jpeg'
+import RugbyTan  from '../../assets/RugbyTan.jpeg'
+import FarhahCadar from '../../assets/FarhahCadar.jpg'
+
+
 
 const initialState = {
     items: [
@@ -26,6 +44,27 @@ const initialState = {
         {id: 10, name: 'Misha Set - Mocca Nude', price: 250000, qty: 0, img: setMoccaNude},
         {id:11, name: 'Misha Abaya - Nude Mocca', price: 250000, qty: 0, img: setNudeMocca},
         {id: 12, name: 'Misha Set - Dusty Pink Vanilla', price: 250000, qty: 0, img: setDustyPink},
+        {id: 13, name: 'Zara Abaya - Lilac', price: 229000, qty: 0, img: ZaraLilac},
+        {id: 14, name: 'Zara Abaya - Olive', price: 229000, qty: 0, img: ZaraOlive},
+        {id: 15, name: 'Zara Abaya - Fossil', price: 229000, qty: 0, img: ZaraFossil},
+        {id:16, name: 'Zara Abaya - Milky', price: 229000, qty: 0, img: ZaraMilky},
+        {id: 17, name: 'Zara Abaya - Brownie', price: 229000, qty: 0, img: ZaraBrownie},
+        //black
+        {id: 18, name: 'Zara Abaya - Lilac', price: 229000, qty: 0, img: BlackLilac},
+        {id: 19, name: 'Zara Abaya - Olive', price: 229000, qty: 0, img: BlackOlive},
+        {id: 20, name: 'Zara Abaya - Fossil', price: 229000, qty: 0, img: BlackFossil},
+        {id:21, name: 'Zara Abaya - Milky', price: 229000, qty: 0, img: BlackMilky},
+        {id: 22, name: 'Zara Abaya - Brownie', price: 229000, qty: 0, img: BlackBrownie},
+        {id: 23, name: 'Zara Abaya - Mustard', price: 229000, qty: 0, img: BlackMustard},
+        {id:24, name: 'Zara Abaya - Army', price: 229000, qty: 0, img: BlackArmy},
+        {id: 25, name: 'Zara Abaya - Dark Mustard', price: 229000, qty: 0, img: BlackDarkMustard},
+        {id:26, name: 'Farhah Khimar - Peach Beige', price: 100000, qty: 0, img: PeachBeige},
+        {id: 27, name: 'Farhah Khimar - Rugby Tan', price: 100000, qty: 0, img: RugbyTan},
+
+        {id: 28, name: 'Farhah Cadar - Tali Premium', price: 20000, qty: 0, img: FarhahCadar},
+
+        
+        
     ],
     addedItems: [],
     total: 0
