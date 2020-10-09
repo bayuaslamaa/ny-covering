@@ -5,7 +5,7 @@ import {useSelector} from 'react-redux'
 import { CardDeck, Card, Badge} from 'react-bootstrap'
 import ButtonAddCart from '../components/ButtonCart' 
 
-export default function Cadar() {
+export default function ShaylaOne() {
 
     useEffect(()=>{
         if(envi === "production") {
@@ -13,17 +13,17 @@ export default function Cadar() {
             ReactPixel.track("ViewContent")
         }
       }, [])
-    const item28 = useSelector(state => state.items[27])
-    const item29 = useSelector(state => state.items[28])
-    const item30 = useSelector(state => state.items[29])
-    const item31 = useSelector(state => state.items[30])
+    const item32 = useSelector(state => state.items[31])
+    const item33 = useSelector(state => state.items[32])
+    const item34 = useSelector(state => state.items[33])
+    const item35 = useSelector(state => state.items[34])
     return (<div  className={`container col-${12}`} >
         <CardDeck>
                     
                     <Card>
-                        <Card.Img variant="top" src={item28.img}  />
+                        <Card.Img variant="top" src={item32.img}  />
                         <Card.Body>
-                            <Card.Title  style={{fontWeight: 600}}>{item28.name} <Badge pill variant="warning">New</Badge></Card.Title>
+                            <Card.Title  style={{fontWeight: 600}}>{item32.name} <Badge pill variant="warning">New</Badge></Card.Title>
                             <Card.Text>Spesifikasi:</Card.Text>
                             <Card.Text>
                             Matt : Babydoll HQ
@@ -32,14 +32,14 @@ Breathable, no berembun untuk yang berkacamata dan TANPA jahit di hidung
                     </Card.Text>
                            
                             
-                            <Card.Text>    IDR 20,000</Card.Text>
-                            <ButtonAddCart id={28} />
+                            <Card.Text>    IDR 190,000</Card.Text>
+                            <ButtonAddCart id={32} />
                         </Card.Body>
                     </Card>
                     <Card>
-                        <Card.Img variant="top" src={item29.img}  />
+                        <Card.Img variant="top" src={item33.img}  />
                         <Card.Body>
-                            <Card.Title  style={{fontWeight: 600}}>{item29.name} <Badge pill variant="warning">New</Badge></Card.Title>
+                            <Card.Title  style={{fontWeight: 600}}>{item33.name} <Badge pill variant="warning">New</Badge></Card.Title>
                             <Card.Text>Spesifikasi:</Card.Text>
                             <Card.Text>
                             Matt : Babydoll HQ
@@ -48,14 +48,14 @@ Breathable, no berembun untuk yang berkacamata dan TANPA jahit di hidung
                     </Card.Text>
                            
                             
-                            <Card.Text>    IDR 20,000</Card.Text>
-                            <ButtonAddCart id={29} />
+                            <Card.Text>    IDR 190,000</Card.Text>
+                            <ButtonAddCart id={33} />
                         </Card.Body>
                     </Card>
                     <Card>
-                        <Card.Img variant="top" src={item30.img}  />
+                        <Card.Img variant="top" src={item34.img}  />
                         <Card.Body>
-                            <Card.Title  style={{fontWeight: 600}}>{item30.name} <Badge pill variant="warning">New</Badge></Card.Title>
+                            <Card.Title  style={{fontWeight: 600}}>{item34.name} <Badge pill variant="warning">New</Badge></Card.Title>
                             <Card.Text>Spesifikasi:</Card.Text>
                             <Card.Text>
                             Matt : Babydoll HQ
@@ -64,14 +64,14 @@ Breathable, no berembun untuk yang berkacamata dan TANPA jahit di hidung
                     </Card.Text>
                            
                             
-                            <Card.Text>    IDR 20,000</Card.Text>
-                            <ButtonAddCart id={30} />
+                            <Card.Text>    IDR 190,000</Card.Text>
+                            <ButtonAddCart id={34} />
                         </Card.Body>
                     </Card>
                     <Card>
-                        <Card.Img variant="top" src={item31.img}  />
+                        <Card.Img variant="top" src={item35.img}  />
                         <Card.Body>
-                            <Card.Title  style={{fontWeight: 600}}>{item31.name} <Badge pill variant="warning">New</Badge></Card.Title>
+                            <Card.Title  style={{fontWeight: 600}}>{item35.name} <Badge pill variant="warning">New</Badge></Card.Title>
                             <Card.Text>Spesifikasi:</Card.Text>
                             <Card.Text>
                             Matt : Babydoll HQ
@@ -80,8 +80,8 @@ Breathable, no berembun untuk yang berkacamata dan TANPA jahit di hidung
                     </Card.Text>
                            
                             
-                            <Card.Text>    IDR 20,000</Card.Text>
-                            <ButtonAddCart id={31} />
+                            <Card.Text>    IDR 190,000</Card.Text>
+                            <ButtonAddCart id={35} />
                         </Card.Body>
                     </Card>
                 

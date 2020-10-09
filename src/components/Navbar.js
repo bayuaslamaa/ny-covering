@@ -9,6 +9,8 @@ import Home from '../containers/Home'
 import Abaya from '../containers/Abaya'
 import Zara from '../containers/Zara'
 import ZaraBlack from '../containers/ZaraBlack'
+import ShaylaOne from '../containers/ShaylaOne'
+import ShaylaTwo from '../containers/ShaylaTwo'
 // import Package from '../containers/Package'
 import { Navbar, NavDropdown,  Badge } from 'react-bootstrap'
 import Misha from '../containers/Misha'
@@ -90,6 +92,14 @@ export default function NavbarPage() {
                                         </Link>
                                     </NavDropdown>
                                 </li>
+                                <li className="nav-item">
+                                <NavDropdown title="Dress" id="basic-nav-dropdown">
+                                         <Link className="nav-link" to="/shayla-one">Shayla Dress {<p style={{color: "#9C7A76"}}>Style 1</p>}</Link>
+                                 
+                                    <NavDropdown.Divider />
+                                        <Link className="nav-link" to="/shayla-two">Shayla Dress{<p style={{color: "#9C7A76"}}>Style 2</p>}</Link>
+                                </NavDropdown>
+                                </li>
                                 
                                 {/* <li className="nav-item">
                                     <Link className="nav-link" to="/abaya">Misha Abaya</Link>
@@ -131,6 +141,8 @@ export default function NavbarPage() {
                 <Route path="/zara-color"><Zara /></Route>
                 <Route path="/zara-black"><ZaraBlack /></Route>
                 <Route path="/cadar-farhah"><Cadar /></Route>
+                <Route path="/shayla-one"><ShaylaOne /></Route>
+                <Route path="/shayla-two"><ShaylaTwo /></Route>
                 <Route path="/confirm"><Confirmation/></Route>
             </Switch>
         </Router>

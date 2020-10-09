@@ -26,7 +26,18 @@ import BlackArmy from '../../assets/BlackArmy.jpg'
 import BlackDarkMustard from '../../assets/BlackDarkMustard.jpg'
 import PeachBeige from '../../assets/PeachBeige.jpeg'
 import RugbyTan  from '../../assets/RugbyTan.jpeg'
-import FarhahCadar from '../../assets/FarhahCadar.jpg'
+import CandyPinkCadar from '../../assets/CandyPinkCadar.jpg'
+import BabyBlueCadar from '../../assets/BabyBlueCadar.jpg'
+import LightTaupeCadar from '../../assets/LightTaupeCadar.jpg'
+import OliveGreenCadar from '../../assets/OliveGreenCadar.jpg'
+
+import LovelyPink from '../../assets/LovelyPink.jpg'
+import Mocca from '../../assets/Mocca.jpg'
+import Navy from '../../assets/Navy.jpg'
+import SkyBlue from '../../assets/SkyBlue.jpg'
+
+import LovelyPink2 from '../../assets/LovelyPink2.jpg'
+import DustyPink2 from '../../assets/DustyPink2.jpg'
 
 
 
@@ -61,7 +72,16 @@ const initialState = {
         {id:26, name: 'Farhah Khimar - Peach Beige', price: 100000, qty: 0, img: PeachBeige},
         {id: 27, name: 'Farhah Khimar - Rugby Tan', price: 100000, qty: 0, img: RugbyTan},
 
-        {id: 28, name: 'Farhah Cadar - Tali Premium', price: 20000, qty: 0, img: FarhahCadar},
+        {id: 28, name: 'Farhah Cadar - Candy Pink', price: 20000, qty: 0, img: CandyPinkCadar},
+        {id: 29, name: 'Farhah Cadar - Baby Blue', price: 20000, qty: 0, img: BabyBlueCadar},
+        {id: 30, name: 'Farhah Cadar - Light Taupe', price: 20000, qty: 0, img: LightTaupeCadar},
+        {id: 31, name: 'Farhah Cadar - Olive Green', price: 20000, qty: 0, img: OliveGreenCadar},
+        {id: 32, name: 'Shayla Dress Style 1 - Lovely Pink', price: 190000, qty: 0, img: LovelyPink},
+        {id: 33, name: 'Shayla Dress Style 1 - Mocca', price: 190000, qty: 0, img: Mocca},
+        {id: 34, name: 'Shayla Dress Style 1 - Navy', price: 190000, qty: 0, img: Navy},
+        {id: 35, name: 'Shayla Dress Style 1 - Sky Blue', price: 190000, qty: 0, img: SkyBlue},
+        {id: 36, name: 'Shayla Dress Style 2 - Lovely Pink', price: 190000, qty: 0, img: LovelyPink2},
+        {id: 37, name: 'Shayla Dress Style 2 - Dusty Pink', price: 190000, qty: 0, img: DustyPink2},
 
         
         
