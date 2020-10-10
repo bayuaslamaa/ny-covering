@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "14da157101a80ad2a39d7dc4f3892ce9",
+    "revision": "7135b2038143e28205bd001ea399ed6e",
     "url": "/index.html"
   },
   {
-    "revision": "27607891a961a70b560e",
-    "url": "/static/css/2.6b0f9ba9.chunk.css"
+    "revision": "c015020dbb3b8c80f0c8",
+    "url": "/static/css/2.82e3021d.chunk.css"
   },
   {
-    "revision": "3b7d0746f9a10b23d8b4",
-    "url": "/static/css/main.1fed9566.chunk.css"
+    "revision": "71a69ce531f5c6e4e3cb",
+    "url": "/static/css/main.724d4efd.chunk.css"
   },
   {
-    "revision": "27607891a961a70b560e",
-    "url": "/static/js/2.a3261127.chunk.js"
+    "revision": "c015020dbb3b8c80f0c8",
+    "url": "/static/js/2.9a662b98.chunk.js"
   },
   {
     "revision": "d2966845b94a3318bf32eecc7af8015d",
-    "url": "/static/js/2.a3261127.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.9a662b98.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3b7d0746f9a10b23d8b4",
-    "url": "/static/js/main.da8995a7.chunk.js"
+    "revision": "71a69ce531f5c6e4e3cb",
+    "url": "/static/js/main.3320fdad.chunk.js"
   },
   {
     "revision": "3d250d420095f1e340d6",
@@ -44,12 +44,64 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/BabyBlue.f7666829.jpg"
   },
   {
+    "revision": "6f21d1b71ef9907d8853933ed593fdf3",
+    "url": "/static/media/BabyBlueCadar.6f21d1b7.jpg"
+  },
+  {
+    "revision": "caf87883002757e7ddf7f1fda3dded99",
+    "url": "/static/media/BlackArmy.caf87883.jpg"
+  },
+  {
+    "revision": "1192ee348d9029fe258c4794309e4914",
+    "url": "/static/media/BlackBrownie.1192ee34.jpg"
+  },
+  {
+    "revision": "800e907c8f2d9288394ef1be1263c3e8",
+    "url": "/static/media/BlackDarkMustard.800e907c.jpg"
+  },
+  {
+    "revision": "6d17a25ea7dc1d6a5023416e72c669a0",
+    "url": "/static/media/BlackFossil.6d17a25e.jpg"
+  },
+  {
+    "revision": "6f819163a161ce8b7a5b7f009f03c508",
+    "url": "/static/media/BlackLilac.6f819163.jpg"
+  },
+  {
+    "revision": "51913856919f3a0688e73fd79a698da4",
+    "url": "/static/media/BlackMilky.51913856.jpg"
+  },
+  {
+    "revision": "7bd5c933d8d169574cf747a9f443f5a5",
+    "url": "/static/media/BlackMustard.7bd5c933.jpg"
+  },
+  {
+    "revision": "e464e481bf3c41994d9aac53e9a162fa",
+    "url": "/static/media/BlackOlive.e464e481.jpg"
+  },
+  {
+    "revision": "6b4cf2505c2ea5d487844d45524df95f",
+    "url": "/static/media/CandyPinkCadar.6b4cf250.jpg"
+  },
+  {
     "revision": "b1ce94e212eb4edbeb8154095c0a9fa2",
     "url": "/static/media/CarouselHome2.b1ce94e2.jpg"
   },
   {
     "revision": "1ac2086fa4186b571e60c713959db1bc",
     "url": "/static/media/CarouselHome3.1ac2086f.jpg"
+  },
+  {
+    "revision": "25b061399705b4208999705c37d80657",
+    "url": "/static/media/Carousell1.25b06139.jpeg"
+  },
+  {
+    "revision": "2fa2a9a9c111de39f070908fe81661a6",
+    "url": "/static/media/Carousell2.2fa2a9a9.jpeg"
+  },
+  {
+    "revision": "9ad842bbcd3684225087473f3a822084",
+    "url": "/static/media/Carousell3.9ad842bb.jpeg"
   },
   {
     "revision": "e242ca835c40c11478f9d829e01cb761",
@@ -60,12 +112,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Coffee.5ab49655.jpg"
   },
   {
+    "revision": "ab6aff9f4aef3334f682fa959497065a",
+    "url": "/static/media/DustyPink2.ab6aff9f.jpg"
+  },
+  {
+    "revision": "59846faddb8a0145c755560dbb8c7307",
+    "url": "/static/media/LightTaupeCadar.59846fad.jpg"
+  },
+  {
+    "revision": "4082a2b1cc7c04c75b124ae65829b816",
+    "url": "/static/media/LovelyPink.4082a2b1.jpg"
+  },
+  {
+    "revision": "98a93f1ab5e28bfee5347dabcdcdb278",
+    "url": "/static/media/LovelyPink2.98a93f1a.jpg"
+  },
+  {
+    "revision": "cbd96ed643fb54ee822dddb68f06372a",
+    "url": "/static/media/Mocca.cbd96ed6.jpg"
+  },
+  {
     "revision": "e980423b10b578ce07c58ff42776d77c",
     "url": "/static/media/ModelOlive.e980423b.jpg"
   },
   {
     "revision": "97eb30729bd3d3b06d188dfd30f19c14",
     "url": "/static/media/ModelPink.97eb3072.jpg"
+  },
+  {
+    "revision": "f0e44d1411648518098d0eb2d3bbd87b",
+    "url": "/static/media/Navy.f0e44d14.jpg"
   },
   {
     "revision": "73b16e5048fd1a16bb3a39b8f8b5ebdf",
@@ -76,8 +152,44 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/OatVanilla.4a4ce6af.jpg"
   },
   {
+    "revision": "a6199fed09e7434d158eca924e7df532",
+    "url": "/static/media/OliveGreenCadar.a6199fed.jpg"
+  },
+  {
+    "revision": "934895ac1a386f40f8367a7665067fd8",
+    "url": "/static/media/PeachBeige.934895ac.jpeg"
+  },
+  {
+    "revision": "46b118dd716667dc910840cc6762ff7d",
+    "url": "/static/media/RugbyTan.46b118dd.jpeg"
+  },
+  {
     "revision": "7cff704fd5a8239d9d65f798236353e9",
     "url": "/static/media/SetMoccaNude.7cff704f.jpg"
+  },
+  {
+    "revision": "e1e1231d183f26459ae490fe4609d6ce",
+    "url": "/static/media/SkyBlue.e1e1231d.jpg"
+  },
+  {
+    "revision": "cffbec5734ac12dccfcb93833c0c4409",
+    "url": "/static/media/ZaraBrownie.cffbec57.jpg"
+  },
+  {
+    "revision": "6f1e05c538f8d3917b093d5b5c4cf065",
+    "url": "/static/media/ZaraFossil.6f1e05c5.jpg"
+  },
+  {
+    "revision": "fe3e8b50ef6801a800fe5743922dc9b7",
+    "url": "/static/media/ZaraLilac.fe3e8b50.jpg"
+  },
+  {
+    "revision": "1ee62e230b0f621a567b38e22eea6882",
+    "url": "/static/media/ZaraMilky.1ee62e23.jpg"
+  },
+  {
+    "revision": "d301c7051755cb21fec8465e81b6a1e6",
+    "url": "/static/media/ZaraOlive.d301c705.jpg"
   },
   {
     "revision": "085b1dd8427dbeff10bd55410915a3f6",

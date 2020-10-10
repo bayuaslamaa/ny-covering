@@ -22,13 +22,16 @@ export default function ShaylaTwo() {
                         <Card.Img variant="top" src={item36.img}  />
                         <Card.Body>
                             <Card.Title  style={{fontWeight: 600}}>{item36.name} <Badge pill variant="warning">New</Badge></Card.Title>
-                            <Card.Text>Spesifikasi:</Card.Text>
-                            <Card.Text>
-                            Matt : Babydoll HQ
-Double layer (tidak terawang)
-Breathable, no berembun untuk yang berkacamata dan TANPA jahit di hidung
-                    </Card.Text>
-                           
+                            <Card.Text>• Berbahan Baby Doll Armany dengan handfeel terbaik</Card.Text>
+                            <Card.Text>• Busui friendly (ada resleting di dada)</Card.Text>
+                            <Card.Text>• Berlayer-layer dan full furing.</Card.Text>
+                            <Card.Text>• Ada tali di pinggang jd tidak perlu takut kebesaran</Card.Text>
+                            <Card.Text>• Kancing di pergelangan tangan yang sederhana tapi manis!</Card.Text>
+                            <Card.Text>• Dilengkapi renda bunga & motif lipit di bagian bawahnya sehingga no worries kalau kamu suka pakai khimar panjang, dress ini akan tetap ON point karena khimarnya tidak akan menutupi dress cantik ini 😍
+</Card.Text>
+                            <Card.Text>ALL SIZE!</Card.Text>
+                            <Card.Text>LD up to 110 cm PB 140 cm</Card.Text>
+                      
                             
                             <Card.Text>    IDR 190,000</Card.Text>
                             <ButtonAddCart id={36} />
@@ -38,13 +41,15 @@ Breathable, no berembun untuk yang berkacamata dan TANPA jahit di hidung
                         <Card.Img variant="top" src={item37.img}  />
                         <Card.Body>
                             <Card.Title  style={{fontWeight: 600}}>{item37.name} <Badge pill variant="warning">New</Badge></Card.Title>
-                            <Card.Text>Spesifikasi:</Card.Text>
-                            <Card.Text>
-                            Matt : Babydoll HQ
-Double layer (tidak terawang)
-Breathable, no berembun untuk yang berkacamata dan TANPA jahit di hidung
-                    </Card.Text>
-                           
+                            <Card.Text>• Berbahan Baby Doll Armany dengan handfeel terbaik</Card.Text>
+                            <Card.Text>• Busui friendly (ada resleting di dada)</Card.Text>
+                            <Card.Text>• Berlayer-layer dan full furing.</Card.Text>
+                            <Card.Text>• Ada tali di pinggang jd tidak perlu takut kebesaran</Card.Text>
+                            <Card.Text>• Kancing di pergelangan tangan yang sederhana tapi manis!</Card.Text>
+                            <Card.Text>• Dilengkapi renda bunga & motif lipit di bagian bawahnya sehingga no worries kalau kamu suka pakai khimar panjang, dress ini akan tetap ON point karena khimarnya tidak akan menutupi dress cantik ini 😍
+</Card.Text>
+                            <Card.Text>ALL SIZE!</Card.Text>
+                            <Card.Text>LD up to 110 cm PB 140 cm</Card.Text>
                             
                             <Card.Text>    IDR 190,000</Card.Text>
                             <ButtonAddCart id={37} />

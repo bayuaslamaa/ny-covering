@@ -60,6 +60,11 @@ export default function NavbarPage() {
                                         <Link className="nav-link" to="/zara-black">Zara Abaya {<p style={{color: "#9C7A76"}}>black series</p>}</Link>
 
                                         <NavDropdown.Divider />
+                                        <Link className="nav-link" to="/shayla-one">Shayla Dress {<p style={{color: "#9C7A76"}}>Style 1</p>}</Link>
+                                 
+                                 <NavDropdown.Divider />
+                                     <Link className="nav-link" to="/shayla-two">Shayla Dress{<p style={{color: "#9C7A76"}}>Style 2</p>}</Link>
+                                 <NavDropdown.Divider />
                                          <Link className="nav-link" to="/farhah">Farhah Khimar <Badge pill variant="warning">New Item </Badge></Link>
                                     </NavDropdown>
                                 </li>

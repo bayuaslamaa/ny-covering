@@ -32,7 +32,7 @@ export default (props) => {
             <Button title="kurangi jumlah order" onClick={() => substractCart(id)} variant="light" style={{backgroundColor:"#9C7A76", color: "white"}}> <MDBIcon icon="minus" /></Button>
        </>
          )
-    } else if (id === 2){
+    } else if (id === 2 || id === 35){
       return (<><Button title="mulai order"  variant="light" style={{backgroundColor:"grey", color: "white"}}><MDBIcon icon="cart-plus" /> Tambah Ke Keranjang</Button></>)
     } else {
             return (<><Button title="mulai order" onClick={() => addCart(id) } variant="light" style={{backgroundColor:"#9C7A76", color: "white"}}><MDBIcon icon="cart-plus" /> Tambah Ke Keranjang</Button></>)

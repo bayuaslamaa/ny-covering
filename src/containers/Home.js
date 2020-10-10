@@ -40,6 +40,15 @@ export default function Home() {
     const item26 = useSelector(state => state.items[25])
     const item27 = useSelector(state => state.items[26])
     const item28 = useSelector(state => state.items[27])
+    const item29 = useSelector(state => state.items[28])
+    const item30 = useSelector(state => state.items[29])
+    const item33 = useSelector(state => state.items[32])
+    const item34 = useSelector(state => state.items[33])
+    const item35 = useSelector(state => state.items[34])
+
+
+    const item36 = useSelector(state => state.items[35])
+    const item37 = useSelector(state => state.items[36])
     
 
     useEffect(()=>{
@@ -106,12 +115,47 @@ export default function Home() {
                     </Carousel>
                 </div>
                 <div className={"container col-9 offset-2"} style={{marginBottom: 20}}>
+                <h3>Shayla Dress Style 2 <Badge pill variant="light">New Collection</Badge> </h3>
+
+                        <CardDeck>
+                        <Link to={{pathname: "/shayla-two"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 200, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
+                        <HomeCard item={item36} />
+                        <HomeCard item={item37} />
+
+
+                        </CardDeck>
+                        </div>
+                <div className={"container col-8 offset-2"} style={{marginBottom: 20}}>
+                     <h3>Farhah Cadar <Badge pill variant="light">New Collection</Badge> </h3>
+    
+                      <CardDeck>
+                    <HomeCard item={item28} />
+                    <HomeCard item={item29} />
+                    <HomeCard item={item30} />
+                <Link to={{pathname: "/cadar-farhah"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 200, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
+                  
+
+                     </CardDeck>
+                </div>
+                <div className={"container col-8 offset-2"} style={{marginBottom: 20}}>
+                <h3>Shayla Dress Style 1 <Badge pill variant="light">New Collection</Badge> </h3>
+    
+                      <CardDeck>
+                <Link to={{pathname: "/shayla-one"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 200, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
+                    <HomeCard item={item33} />
+                    <HomeCard item={item35} />
+                    <HomeCard item={item34} />
+                  
+
+                     </CardDeck>
+                </div>
+                <div className={"container col-9 offset-2"} style={{marginBottom: 20}}>
                 <h3><Badge pill variant="warning">New Arrival</Badge> Farhah Khimar</h3>
 
                         <CardDeck>
-                        <Link to={{pathname: "/farhah"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 200, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
                         <HomeCard item={item26} />
                         <HomeCard item={item27} />
+                        <Link to={{pathname: "/farhah"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 200, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
 
 
                         </CardDeck>
@@ -121,24 +165,15 @@ export default function Home() {
     
                     <h5 style={{color: "#9C7A76"}}>Color Series </h5>
                       <CardDeck>
+                <Link to={{pathname: "/zara-color"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 200, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
                     <HomeCard item={item13} />
                     <HomeCard item={item14} />
                     <HomeCard item={item15} />
-                <Link to={{pathname: "/zara-color"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 200, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
                   
 
                      </CardDeck>
                 </div>
-                <div className={"container col-6 offset-2"} style={{marginBottom: 20}}>
-                     <h3>Farhah Cadar <Badge pill variant="light">New Collection</Badge> </h3>
-    
-                      <CardDeck>
-                <Link to={{pathname: "/cadar-farhah"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 200, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
-                    <HomeCard item={item28} />
-                  
-
-                     </CardDeck>
-                </div>
+              
                 <div className={"container col-8 offset-2"} style={{marginBottom: 20}}>
 
                 <h3>Zara Abaya <Badge pill variant="light">New Collection</Badge> </h3>
