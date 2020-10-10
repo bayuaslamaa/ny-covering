@@ -9,7 +9,7 @@ import { envi } from '../config'
 
 
 export default function Zara() {
-    useEffect(()=>{
+    useEffect(() => {
         if(envi === "production"){
             ReactPixel.init("614220549496198")
             ReactPixel.track("ViewContent")
@@ -23,7 +23,7 @@ export default function Zara() {
     const item17 = useSelector(state => state.items[16])
 
 
-    return (<><div className="container col-9" >
+    return (<><div className="container col-sm-9" >
         <CardDeck>
             <Card>
                 <Card.Img variant="top" src={item13.img} />
@@ -104,7 +104,7 @@ export default function Zara() {
         
 
     </div >
-    <div className="container col-6" style={{marginTop: 30}}>
+    <div className="container col-sm-6" style={{marginTop: 30}}>
         <CardDeck>
         <Card>
                 <Card.Img variant="top" src={item16.img} />

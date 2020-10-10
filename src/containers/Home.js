@@ -7,7 +7,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 //     faInstagram
 //   } from "@fortawesome/free-brands-svg-icons";
 import ReactPixel from 'react-facebook-pixel'
-import { CardDeck, Card, Carousel, Button, Badge } from 'react-bootstrap'
+import { CardDeck, Card, Carousel, Button, Badge,  } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 
@@ -50,6 +50,7 @@ export default function Home() {
     const item36 = useSelector(state => state.items[35])
     const item37 = useSelector(state => state.items[36])
     
+    const click = useSelector(state => state.click)
 
     useEffect(()=>{
      if (envi === "production") {
@@ -60,72 +61,74 @@ export default function Home() {
     return (
         <>
             <div className="container" style={{ display: "flex", flexDirection: 'row', flexWrap: "wrap", justifyContent: "space-evenly", height: 120 }}>
+{
+    click ? <></> : (<div className="col-12" style={{ top: -100, marginTop: 0, width: "30%" }}>
+    <Carousel interval={1500} controls={false} indicators={false} >
+        <Carousel.Item>
+            <img
+                style={{ width: "100%" }}
+                className="d-block h-70"
+                src={CarouselHome4}
+                alt="slide"
+            />
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+                style={{ width: "100%" }}
+                className="d-block h-70"
+                src={CarouselHome5}
+                alt="slide"
+            />
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+                style={{ width: "100%" }}
+                className="d-block h-70"
+                src={CarouselHome6}
+                alt="slide"
+            />
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+                style={{ width: "100%" }}
+                className="d-block h-70"
+                src={CarouselHome1}
+                alt="slide"
+            />
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+                style={{ width: "100%" }}
+                className="d-block h-70"
+                src={CarouselHome2}
+                alt="slide"
+            />
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+                style={{ width: "100%" }}
+                className="d-block h-70"
+                src={CarouselHome3}
+                alt="slide"
+            />
+        </Carousel.Item>
 
-                <div className="col-12" style={{ top: -100, marginTop: 0, width: "30%" }}>
-                    <Carousel interval={1500} controls={false} indicators={false} >
-                        <Carousel.Item>
-                            <img
-                                style={{ width: "100%" }}
-                                className="d-block h-70"
-                                src={CarouselHome4}
-                                alt="slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                style={{ width: "100%" }}
-                                className="d-block h-70"
-                                src={CarouselHome5}
-                                alt="slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                style={{ width: "100%" }}
-                                className="d-block h-70"
-                                src={CarouselHome6}
-                                alt="slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                style={{ width: "100%" }}
-                                className="d-block h-70"
-                                src={CarouselHome1}
-                                alt="slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                style={{ width: "100%" }}
-                                className="d-block h-70"
-                                src={CarouselHome2}
-                                alt="slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                style={{ width: "100%" }}
-                                className="d-block h-70"
-                                src={CarouselHome3}
-                                alt="slide"
-                            />
-                        </Carousel.Item>
-
-                    </Carousel>
-                </div>
-                <div className={"container col-9 offset-2"} style={{marginBottom: 20}}>
+    </Carousel>
+</div>)
+}
+                
+                <div className={"container col-sm-9 offset-sm-2"} style={{marginBottom: 20}}>
                 <h3>Shayla Dress Style 2 <Badge pill variant="light">New Collection</Badge> </h3>
 
                         <CardDeck>
-                        <Link to={{pathname: "/shayla-two"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 200, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
+                        <Link to={{pathname: "/shayla-two"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 170, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
                         <HomeCard item={item36} />
                         <HomeCard item={item37} />
 
 
                         </CardDeck>
                         </div>
-                <div className={"container col-8 offset-2"} style={{marginBottom: 20}}>
+                <div className={"container col-sm-8 offset-sm-2"} style={{marginBottom: 30}}>
                      <h3>Farhah Cadar <Badge pill variant="light">New Collection</Badge> </h3>
     
                       <CardDeck>
@@ -137,7 +140,7 @@ export default function Home() {
 
                      </CardDeck>
                 </div>
-                <div className={"container col-8 offset-2"} style={{marginBottom: 20}}>
+                <div className={"container col-sm-8 offset-sm-2"} style={{marginBottom: 20}}>
                 <h3>Shayla Dress Style 1 <Badge pill variant="light">New Collection</Badge> </h3>
     
                       <CardDeck>
@@ -149,7 +152,7 @@ export default function Home() {
 
                      </CardDeck>
                 </div>
-                <div className={"container col-9 offset-2"} style={{marginBottom: 20}}>
+                <div className={"container col-sm-9 offset-sm-2"} style={{marginBottom: 20}}>
                 <h3><Badge pill variant="warning">New Arrival</Badge> Farhah Khimar</h3>
 
                         <CardDeck>
@@ -160,7 +163,7 @@ export default function Home() {
 
                         </CardDeck>
                         </div>
-                <div className={"container col-8 offset-2"} style={{marginBottom: 20}}>
+                <div className={"container col-sm-8 offset-sm-2"} style={{marginBottom: 20}}>
                      <h3>Zara Abaya <Badge pill variant="light">New Collection</Badge> </h3>
     
                     <h5 style={{color: "#9C7A76"}}>Color Series </h5>
@@ -174,7 +177,7 @@ export default function Home() {
                      </CardDeck>
                 </div>
               
-                <div className={"container col-8 offset-2"} style={{marginBottom: 20}}>
+                <div className={"container col-sm-8 offset-sm-2"} style={{marginBottom: 20}}>
 
                 <h3>Zara Abaya <Badge pill variant="light">New Collection</Badge> </h3>
                     <h5 style={{color: "#9C7A76"}}>Black Series</h5>
@@ -187,7 +190,7 @@ export default function Home() {
 
                      </CardDeck>
                 </div>
-                <div className={"container col-8 offset-2"} style={{marginBottom: 20}}>
+                <div className={"container col-sm-8 offset-sm-2"} style={{marginBottom: 20}}>
 
                     <h1>Farhah Khimar</h1>
                       <CardDeck>
@@ -199,7 +202,7 @@ export default function Home() {
 
                      </CardDeck>
                 </div>
-                <div className={"container col-8 offset-2"} style={{marginBottom: 20}}>
+                <div className={"container col-sm-8 offset-sm-2"} style={{marginBottom: 20}}>
                     <h1>Misha Khimar</h1>
                       <CardDeck>
 
@@ -211,7 +214,7 @@ export default function Home() {
 
                      </CardDeck>
                 </div>
-                <div className={"container col-8 offset-2"} style={{marginBottom: 20}}>
+                <div className={"container col-sm-8 offset-sm-2"} style={{marginBottom: 20}}>
                     <h1>Misha Abaya</h1>
                 <CardDeck>
                     <Link to={{pathname: "/abaya"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 200, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>

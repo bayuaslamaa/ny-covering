@@ -10,7 +10,7 @@ export const REMOVE_CART = 'REMOVE_CART'
 export const ADD_QUANTITY = 'ADD_QUANTITY'
 export const SUB_QUANTITY = 'SUB_QUANTITY'
 export const SET_SHIPPING_PRICE = 'SET_SHIPPING_PRICE'
-
+export const CLICK_MENU = 'CLICK_MENU'
 
 export const addToCart = id => {
     return {
@@ -26,6 +26,12 @@ export const removeCart = id => {
     }
 }
 
+export const onClickMenu = status => {
+    return {
+        type: CLICK_MENU,
+        status
+    }
+}
 
 export const addQuantity = id => {
       return {

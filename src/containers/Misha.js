@@ -16,7 +16,7 @@ export default function Misha() {
     const item4 = useSelector(state => state.items[3].img)
     const item5 = useSelector(state => state.items[4].img)
     const item6 = useSelector(state => state.items[5].img)
-    return (<div  className={`container col-${9}`} style={{marginBottom: 40}} >
+    return (<div  className={`container col-sm-${9}`} style={{marginBottom: 40}} >
         <CardDeck>
                     
                     <Card>

@@ -17,7 +17,7 @@ export default function Abaya() {
     const item7 = useSelector(state => state.items[6].img)
     const item8 = useSelector(state => state.items[7].img)
     const item9 = useSelector(state => state.items[8].img)
-    return (<div className="container col-9" >
+    return (<div className="container col-sm-9" >
         <CardDeck>
             <Card>
                 <Card.Img variant="top" src={item7} />

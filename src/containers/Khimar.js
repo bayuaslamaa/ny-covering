@@ -21,7 +21,7 @@ export default function Farhah() {
     const item27 = useSelector(state => state.items[26])
     // const state = useSelector(state => state)
    
-    return (<><div className={`container col-${9}`} >
+    return (<><div className={`container col-sm-${9}`} >
        <CardDeck>
                 <Card>
                     <Card.Img variant="top" src={item1.img} />
@@ -73,7 +73,7 @@ export default function Farhah() {
                 
 
             </CardDeck>
-    </div ><div className={`container col-${6}`} style={{marginTop: 30}}>
+    </div ><div className={`container col-sm-${6}`} style={{marginTop: 30}}>
        <CardDeck>
                 <Card>
                     <Card.Img variant="top" src={item26.img} />

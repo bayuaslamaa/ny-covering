@@ -15,7 +15,7 @@ export default function ShaylaTwo() {
       }, [])
     const item36 = useSelector(state => state.items[35])
     const item37 = useSelector(state => state.items[36])
-    return (<div  className={`container col-${6}`} >
+    return (<div  className={`container col-sm-${6}`} >
         <CardDeck>
                     
                     <Card>

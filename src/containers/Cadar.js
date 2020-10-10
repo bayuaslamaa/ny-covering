@@ -17,7 +17,7 @@ export default function Cadar() {
     const item29 = useSelector(state => state.items[28])
     const item30 = useSelector(state => state.items[29])
     const item31 = useSelector(state => state.items[30])
-    return (<div  className={`container col-${12}`} >
+    return (<div  className={`container col-sm-${12}`} >
         <CardDeck>
                     
                     <Card>

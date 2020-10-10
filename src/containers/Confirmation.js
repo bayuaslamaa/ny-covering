@@ -24,7 +24,7 @@ export default () => {
     const [address, setAddress] = useState("")
     const [phone, setPhone] = useState("")
     return(
-        <div className="container col-12">
+        <div className="container col-sm-12">
             {
                 addedItems.length ? ( <CardDeck style={{width: "80%", marginRight: "10%", marginLeft: "10%", marginBottom: "15%", marginTop: 0}}>
                 {
@@ -63,7 +63,7 @@ export default () => {
                     <ButtonOrder name={name} address={address} phone={phone}/>
                   </form>)
                 }
-                   </CardDeck>) : <></>
+                   </CardDeck>) : <><h1>TIDAK ADA PESANAN</h1></>
             }
            
              </div>

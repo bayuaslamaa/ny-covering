@@ -1,4 +1,4 @@
-import {  ADD_TO_CART , REMOVE_CART, SUB_QUANTITY, SET_SHIPPING_PRICE} from '../actions/index'
+import {  ADD_TO_CART , REMOVE_CART, SUB_QUANTITY, SET_SHIPPING_PRICE, CLICK_MENU} from '../actions/index'
 import BabyBlue from '../../assets/BabyBlue.jpg'
 import Olive from '../../assets/ModelOlive.jpg'
 import CandyPink from '../../assets/ModelPink.jpg'
@@ -87,7 +87,8 @@ const initialState = {
         
     ],
     addedItems: [],
-    total: 0
+    total: 0,
+    click: false,
 }
 
 
@@ -160,6 +161,11 @@ export default function reducer(state = initialState, action) {
                 ...state,
                 total: state.total + action.price
 
+            }
+        case CLICK_MENU:
+            return {
+                ...state,
+                click: action.status
             }
         default:
             return state

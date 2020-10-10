@@ -26,7 +26,7 @@ export default function ZaraBlack() {
     const item25 = useSelector(state => state.items[24])
 
 
-    return (<><div className="container col-9" >
+    return (<><div className="container col-sm-9" >
         <CardDeck>
             <Card>
                 <Card.Img variant="top" src={item18.img} />
@@ -95,7 +95,7 @@ export default function ZaraBlack() {
         
 
     </div >
-    <div className="container col-9" style={{marginTop: 30}}>
+    <div className="container col-sm-9" style={{marginTop: 30}}>
         <CardDeck>
         <Card>
                 <Card.Img variant="top" src={item21.img} />
@@ -162,7 +162,7 @@ export default function ZaraBlack() {
             
         </CardDeck>
     </div>
-    <div className="container col-6" style={{marginTop: 30}}>
+    <div className="container col-sm-6" style={{marginTop: 30}}>
         <CardDeck>
         <Card>
                 <Card.Img variant="top" src={item24.img} />

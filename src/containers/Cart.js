@@ -54,10 +54,10 @@ export default function Cart () {
         
     })
     ):(
-        <h3 className="col-12">Belum Ada Pesanan</h3>
+        <h3 className="col-sm-12">Belum Ada Pesanan</h3>
     )
     return(
-        <div className="container col-12">
+        <div className="container col-sm-12">
           
             <div className="cart"  >
                 <div style={{marginTop: 0, paddingTop: 0, marginBottom: 65}}>
