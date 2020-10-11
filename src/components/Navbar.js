@@ -158,7 +158,7 @@ export default function NavbarPage() {
   };
 
 
-
+  let marginTop = window.innerWidth < 960 ? 20 : 100
   return (
     <><Router>
         <header>    
@@ -173,7 +173,7 @@ export default function NavbarPage() {
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+        <ul onClick={closeMobileMenu} className={click ? 'nav-menu active' : 'nav-menu'}>
                                 {
                                     addedItems.length ? ( <li className="nav-item" style={{backgroundColor: "sandybrown", }}>
                                     <Link title="CEK KERANJANG" className="nav-links"  onClick={closeMobileMenu} to="/cart" style={{color: "white"}}><MDBIcon icon="shopping-cart" /> Keranjang Kamu</Link>
@@ -216,11 +216,14 @@ export default function NavbarPage() {
                                  <li className="nav-item">
                                     <NavDropdown title="Abaya" className="nav-links" id="basic-nav-dropdown">
                                         
-                                         <Link className="nav-links" to="/farhah" onClick={closeMobileMenu}>Farhah Khimar </Link>
-                                        <NavDropdown.Divider />
+                                    
+//                                             <Link className="nav-links" to="/abaya"  onClick={closeMobileMenu}>Misha Abaya</Link>
                                       
-                                            <Link className="nav-links" to="/misha" onClick={closeMobileMenu}>Misha Khimar </Link>
-                                       
+                                                                          <NavDropdown.Divider />
+                                                                             <Link className="nav-links" to="/zara-color"  onClick={closeMobileMenu}>Zara Abaya {<p style={{color: "#9C7A76"}}>Color Series</p>}</Link>
+                                                                       
+                                                                        <NavDropdown.Divider />
+                                                                           <Link className="nav-links" to="/zara-black"  onClick={closeMobileMenu}>Zara Abaya{<p style={{color: "#9C7A76"}}>Black Series</p>}</Link>
                                     </NavDropdown>
                                 </li>
                                  <li className="nav-item">
@@ -251,7 +254,7 @@ export default function NavbarPage() {
                     <div className="full-bg-img">
                         <div className="mask rgba-black-strong flex-center">
                             <div className="container header">
-                                <img alt="nyco" src={nyco} style={{ width: "50%", height: "20%", marginTop:50, marginBottom: 0, paddingBottom: 0 }} />
+                                <img alt="nyco" src={nyco} style={{ width: "60%", height: "23%", marginTop: marginTop, marginBottom: 0, paddingBottom: 0 }} />
                             </div>
                         </div>
                     </div>

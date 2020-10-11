@@ -35,6 +35,9 @@ export default function ShaylaTwo() {
                             
                             <Card.Text>    IDR 190,000</Card.Text>
                             <ButtonAddCart id={36} />
+                            <Card.Footer >
+                        <p className="text-muted">Stocks: 0 (Restock Soon)</p>
+                    </Card.Footer>
                         </Card.Body>
                     </Card>
                     <Card>
@@ -53,6 +56,9 @@ export default function ShaylaTwo() {
                             
                             <Card.Text>    IDR 190,000</Card.Text>
                             <ButtonAddCart id={37} />
+                            <Card.Footer >
+                        <p className="text-muted">Stocks: 0 (Restock Soon)</p>
+                    </Card.Footer>
                         </Card.Body>
                     </Card>
              

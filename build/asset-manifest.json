@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.724d4efd.chunk.css",
-    "main.js": "/static/js/main.3320fdad.chunk.js",
-    "main.js.map": "/static/js/main.3320fdad.chunk.js.map",
+    "main.css": "/static/css/main.1dcd8fab.chunk.css",
+    "main.js": "/static/js/main.430f10b4.chunk.js",
+    "main.js.map": "/static/js/main.430f10b4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2e59cd40.js",
     "runtime-main.js.map": "/static/js/runtime-main.2e59cd40.js.map",
-    "static/css/2.82e3021d.chunk.css": "/static/css/2.82e3021d.chunk.css",
-    "static/js/2.9a662b98.chunk.js": "/static/js/2.9a662b98.chunk.js",
-    "static/js/2.9a662b98.chunk.js.map": "/static/js/2.9a662b98.chunk.js.map",
+    "static/css/2.6b0f9ba9.chunk.css": "/static/css/2.6b0f9ba9.chunk.css",
+    "static/js/2.f8130b53.chunk.js": "/static/js/2.f8130b53.chunk.js",
+    "static/js/2.f8130b53.chunk.js.map": "/static/js/2.f8130b53.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ba679e2731cc7d72333659c46be42e11.js": "/precache-manifest.ba679e2731cc7d72333659c46be42e11.js",
+    "precache-manifest.383a2d6e9f59101e15ce04a07950010a.js": "/precache-manifest.383a2d6e9f59101e15ce04a07950010a.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.82e3021d.chunk.css.map": "/static/css/2.82e3021d.chunk.css.map",
-    "static/css/main.724d4efd.chunk.css.map": "/static/css/main.724d4efd.chunk.css.map",
-    "static/js/2.9a662b98.chunk.js.LICENSE.txt": "/static/js/2.9a662b98.chunk.js.LICENSE.txt",
+    "static/css/2.6b0f9ba9.chunk.css.map": "/static/css/2.6b0f9ba9.chunk.css.map",
+    "static/css/main.1dcd8fab.chunk.css.map": "/static/css/main.1dcd8fab.chunk.css.map",
+    "static/js/2.f8130b53.chunk.js.LICENSE.txt": "/static/js/2.f8130b53.chunk.js.LICENSE.txt",
     "static/media/AbayaDustyPink.jpg": "/static/media/AbayaDustyPink.8073069d.jpg",
     "static/media/AbayaMoccaNude.jpg": "/static/media/AbayaMoccaNude.8a27add4.jpg",
     "static/media/AbayaNudeMocca.jpg": "/static/media/AbayaNudeMocca.8e1a6c94.jpg",
@@ -63,9 +63,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2e59cd40.js",
-    "static/css/2.82e3021d.chunk.css",
-    "static/js/2.9a662b98.chunk.js",
-    "static/css/main.724d4efd.chunk.css",
-    "static/js/main.3320fdad.chunk.js"
+    "static/css/2.6b0f9ba9.chunk.css",
+    "static/js/2.f8130b53.chunk.js",
+    "static/css/main.1dcd8fab.chunk.css",
+    "static/js/main.430f10b4.chunk.js"
   ]
 }

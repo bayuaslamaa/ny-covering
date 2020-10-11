@@ -121,9 +121,9 @@ export default function Home() {
                 <h3>Shayla Dress Style 2 <Badge pill variant="light">New Collection</Badge> </h3>
 
                         <CardDeck>
-                        <Link to={{pathname: "/shayla-two"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 170, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
                         <HomeCard item={item36} />
                         <HomeCard item={item37} />
+                        <Link to={{pathname: "/shayla-two"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 170, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
 
 
                         </CardDeck>
@@ -144,10 +144,10 @@ export default function Home() {
                 <h3>Shayla Dress Style 1 <Badge pill variant="light">New Collection</Badge> </h3>
     
                       <CardDeck>
-                <Link to={{pathname: "/shayla-one"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 200, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
                     <HomeCard item={item33} />
                     <HomeCard item={item35} />
                     <HomeCard item={item34} />
+                <Link to={{pathname: "/shayla-one"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 200, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
                   
 
                      </CardDeck>
@@ -168,10 +168,10 @@ export default function Home() {
     
                     <h5 style={{color: "#9C7A76"}}>Color Series </h5>
                       <CardDeck>
-                <Link to={{pathname: "/zara-color"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 200, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
                     <HomeCard item={item13} />
                     <HomeCard item={item14} />
                     <HomeCard item={item15} />
+                <Link to={{pathname: "/zara-color"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 200, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
                   
 
                      </CardDeck>
@@ -194,10 +194,10 @@ export default function Home() {
 
                     <h1>Farhah Khimar</h1>
                       <CardDeck>
-                    <Link to={{pathname: "/farhah"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 200, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
                     <HomeCard item={item1} />
                     <HomeCard item={item2} />
                     <HomeCard item={item3} />
+                    <Link to={{pathname: "/farhah"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 200, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
                   
 
                      </CardDeck>
@@ -217,10 +217,10 @@ export default function Home() {
                 <div className={"container col-sm-8 offset-sm-2"} style={{marginBottom: 20}}>
                     <h1>Misha Abaya</h1>
                 <CardDeck>
-                    <Link to={{pathname: "/abaya"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 200, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
                     <HomeCard item={item7} />
                     <HomeCard item={item8} />
                     <HomeCard item={item9} />
+                    <Link to={{pathname: "/abaya"}} style={{color:"white"}}>     <Button variant={"light"} style={{color: "white", backgroundColor:"#9C7A76", width: 200, height: 40 , fontSize: 20, marginBottom: 30}}>Selengkapnya...</Button> </Link>
 
                 </CardDeck>
                 </div>
