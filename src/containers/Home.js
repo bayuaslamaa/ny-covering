@@ -8,7 +8,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 //   } from "@fortawesome/free-brands-svg-icons";
 import ReactPixel from 'react-facebook-pixel'
 import { CardDeck, Card, Carousel, Button, Badge,  } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Link , useHistory} from 'react-router-dom'
 
 
 import CarouselHome1 from '../assets/CarouserHome1.jpg'
@@ -17,7 +17,6 @@ import CarouselHome3 from '../assets/CarouselHome3.jpg'
 import CarouselHome4 from '../assets/Carousell1.jpeg'
 import CarouselHome5 from '../assets/Carousell2.jpeg'
 import CarouselHome6 from '../assets/Carousell3.jpeg'
-
 
 
 
@@ -231,11 +230,11 @@ export default function Home() {
 }
 
 const HomeCard = ({item}) => {
-    
+    const history = useHistory()
     
 
     return (
-    <Card>
+    <Card onClick={() => history.push('/item/' + item.id)}>
     <Card.Img variant="top" src={item.img} />
 
     <Card.Body>

@@ -20,6 +20,7 @@ import nyco from '../assets/nyco.png'
 import Cart from '../containers/Cart'
 import Cadar from '../containers/Cadar'
 import Confirmation from '../containers/Confirmation'
+import Item  from '../containers/Item'
 import { MDBIcon } from 'mdbreact'
 import {useSelector, useDispatch} from 'react-redux'
 import './Navbar.css';
@@ -173,7 +174,7 @@ export default function NavbarPage() {
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
-        <ul onClick={closeMobileMenu} className={click ? 'nav-menu active' : 'nav-menu'}>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                                 {
                                     addedItems.length ? ( <li className="nav-item" style={{backgroundColor: "sandybrown", }}>
                                     <Link title="CEK KERANJANG" className="nav-links"  onClick={closeMobileMenu} to="/cart" style={{color: "white"}}><MDBIcon icon="shopping-cart" /> Keranjang Kamu</Link>
@@ -200,7 +201,7 @@ export default function NavbarPage() {
                                  <NavDropdown.Divider />
                                       <Link className="nav-links" to="/shayla-two" onClick={closeMobileMenu}>Shayla Dress{<p style={{color: "#9C7A76"}}>Style 2</p>}</Link>
                                   <NavDropdown.Divider />
-                                          <Link className="nav-links" to="/farhah" onClick={closeMobileMenu}>Farhah Khimar{<><Badge pill variant="warning">New Item </Badge></>}</Link>
+                                          <Link className="nav-links" to="/farhah" onClick={closeMobileMenu}>Farhah Khimar{<p><Badge pill variant="warning">New Item </Badge></p>}</Link>
                                      </NavDropdown>
                                  </li>
                                  <li className="nav-item">
@@ -217,7 +218,7 @@ export default function NavbarPage() {
                                     <NavDropdown title="Abaya" className="nav-links" id="basic-nav-dropdown">
                                         
                                     
-//                                             <Link className="nav-links" to="/abaya"  onClick={closeMobileMenu}>Misha Abaya</Link>
+                                            <Link className="nav-links" to="/abaya"  onClick={closeMobileMenu}>Misha Abaya</Link>
                                       
                                                                           <NavDropdown.Divider />
                                                                              <Link className="nav-links" to="/zara-color"  onClick={closeMobileMenu}>Zara Abaya {<p style={{color: "#9C7A76"}}>Color Series</p>}</Link>
@@ -278,6 +279,7 @@ export default function NavbarPage() {
                 <Route path="/shayla-one"><ShaylaOne /></Route>
                 <Route path="/shayla-two"><ShaylaTwo /></Route>
                 <Route path="/confirm"><Confirmation/></Route>
+                <Route path="/item/:id" component={Item}></Route>
             </Switch>
       </Router>
     </>

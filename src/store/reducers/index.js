@@ -53,8 +53,9 @@ const initialState = {
         {id: 8, name: 'Misha Abaya - Mocca Nude', price: 150000, qty: 0, img: Abaya2},
         {id: 9, name: 'Misha Abaya - Dusty Pink Vanilla', price: 150000, qty: 0, img: Abaya3},
         {id: 10, name: 'Misha Set - Mocca Nude', price: 250000, qty: 0, img: setMoccaNude},
-        {id:11, name: 'Misha Abaya - Nude Mocca', price: 250000, qty: 0, img: setNudeMocca},
+        {id:11, name: 'Misha Set - Nude Mocca', price: 250000, qty: 0, img: setNudeMocca},
         {id: 12, name: 'Misha Set - Dusty Pink Vanilla', price: 250000, qty: 0, img: setDustyPink},
+
         {id: 13, name: 'Zara Abaya - Lilac', price: 229000, qty: 0, img: ZaraLilac},
         {id: 14, name: 'Zara Abaya - Olive', price: 229000, qty: 0, img: ZaraOlive},
         {id: 15, name: 'Zara Abaya - Fossil', price: 229000, qty: 0, img: ZaraFossil},
@@ -69,17 +70,20 @@ const initialState = {
         {id: 23, name: 'Zara Abaya - Mustard', price: 229000, qty: 0, img: BlackMustard},
         {id:24, name: 'Zara Abaya - Army', price: 229000, qty: 0, img: BlackArmy},
         {id: 25, name: 'Zara Abaya - Dark Mustard', price: 229000, qty: 0, img: BlackDarkMustard},
+
         {id:26, name: 'Farhah Khimar - Peach Beige', price: 100000, qty: 0, img: PeachBeige},
-        {id: 27, name: 'Farhah Khimar - Rugby Tan', price: 100000, qty: 0, img: RugbyTan},
+        {id: 27, name: 'Farhah Khimar - Rugby Tan', price: 150000, qty: 0, img: RugbyTan},
 
         {id: 28, name: 'Farhah Cadar - Candy Pink', price: 20000, qty: 0, img: CandyPinkCadar},
         {id: 29, name: 'Farhah Cadar - Baby Blue', price: 20000, qty: 0, img: BabyBlueCadar},
         {id: 30, name: 'Farhah Cadar - Light Taupe', price: 20000, qty: 0, img: LightTaupeCadar},
         {id: 31, name: 'Farhah Cadar - Olive Green', price: 20000, qty: 0, img: OliveGreenCadar},
+
         {id: 32, name: 'Shayla Dress Style 1 - Lovely Pink', price: 190000, qty: 0, img: LovelyPink},
         {id: 33, name: 'Shayla Dress Style 1 - Mocca', price: 190000, qty: 0, img: Mocca},
         {id: 34, name: 'Shayla Dress Style 1 - Navy', price: 190000, qty: 0, img: Navy},
         {id: 35, name: 'Shayla Dress Style 1 - Sky Blue', price: 190000, qty: 0, img: SkyBlue},
+        
         {id: 36, name: 'Shayla Dress Style 2 - Lovely Pink', price: 190000, qty: 0, img: LovelyPink2},
         {id: 37, name: 'Shayla Dress Style 2 - Dusty Pink', price: 190000, qty: 0, img: DustyPink2},
 
@@ -123,19 +127,6 @@ export default function reducer(state = initialState, action) {
                 addedItems: new_items,
                 total: newTotal
             }
-        // case ADD_QUANTITY:
-        //     // let added = state.items.find(item => item.id === action.id)
-        //     // added.quantity+= 1
-        //     // let new_total = state.total + added.price
-        //     // return {
-        //     //     ...state,
-        //     //     total: new_total
-        //     // }
-        //     return {...state, items: state.items.map(item => {
-        //         if(item.id === action.id) {
-        //             item.qty++
-        //         }
-        //     })}
         case SUB_QUANTITY:
             let addItem = state.items.find(item=> item.id === action.id) 
             //if the qt == 0 then it should be removed

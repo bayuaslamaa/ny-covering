@@ -4,7 +4,7 @@ import ReactPixel from 'react-facebook-pixel'
 import { useSelector} from 'react-redux'
 import { CardDeck, Card, Badge} from 'react-bootstrap'
 import ButtonAddCart from '../components/ButtonCart' 
-
+import { useHistory } from 'react-router-dom'
 
 
 export default function Farhah() {
@@ -14,6 +14,7 @@ export default function Farhah() {
             ReactPixel.track("ViewContent")
         }
       }, [])
+    const history = useHistory()
     const item1 = useSelector(state => state.items[0])
     const item2 = useSelector(state => state.items[1])
     const item3 = useSelector(state => state.items[2])
@@ -23,7 +24,7 @@ export default function Farhah() {
    
     return (<><div className={`container col-sm-${9}`} >
        <CardDeck>
-                <Card>
+                <Card onClick={() => history.push(`/item/${1}`)}>
                     <Card.Img variant="top" src={item1.img} />
                     <Card.Body>
                         <Card.Title style={{fontWeight: 600}}>Farhah Khimar - Baby Blue</Card.Title>
@@ -83,6 +84,7 @@ export default function Farhah() {
                             Baby Doll HQ
       </Card.Text>
                         <Card.Text>  Two Layers</Card.Text>
+                        <Card.Text>Size M</Card.Text>
                         <Card.Text>    IDR 100.000</Card.Text>
                         <ButtonAddCart id={26}/>
                     </Card.Body>
@@ -98,7 +100,8 @@ export default function Farhah() {
                             Baby Doll HQ
                     </Card.Text>
                         <Card.Text>Two Layers</Card.Text>
-                        <Card.Text>    IDR 100.000</Card.Text>
+                        <Card.Text>Size L</Card.Text>
+                        <Card.Text>    IDR 150.000</Card.Text>
                         {/* <ButtonOrder /> */}
                         <ButtonAddCart id={27}/>
                     </Card.Body>
