@@ -4,22 +4,28 @@ import { CardDeck, Card } from 'react-bootstrap'
 import ButtonOrder from '../components/ButtonCart'
 import {useSelector} from 'react-redux'
 import { envi } from '../config'
-
+import { useHistory } from 'react-router-dom'
 
 
 
 export default function Abaya() {
-    console.log(">>", envi)
+    const history = useHistory()
+    const pushToItem = (itemId) => {
+        history.push('/item/' + itemId)
+    }
     useEffect(()=>{
-        ReactPixel.init("614220549496198")
-        ReactPixel.track("ViewContent")
+        if (envi == "production") {
+            ReactPixel.init("614220549496198")
+            ReactPixel.track("ViewContent")
+
+        }
       }, [])
     const item7 = useSelector(state => state.items[6].img)
     const item8 = useSelector(state => state.items[7].img)
     const item9 = useSelector(state => state.items[8].img)
     return (<div className="container col-sm-9" >
         <CardDeck>
-            <Card>
+            <Card onClick={() => pushToItem(7)}>
                 <Card.Img variant="top" src={item7} />
                 <Card.Body>
                     <Card.Title style={{ fontSize: 18 }}>Misha Abaya - Nude Mocca</Card.Title>
@@ -40,7 +46,7 @@ export default function Abaya() {
                     <small className="text-muted">Stocks: 20</small>
                 </Card.Footer> */}
             </Card>
-            <Card>
+            <Card onClick={() => pushToItem(8)}>
                 <Card.Img variant="top" src={item8} />
                 <Card.Body>
                     <Card.Title style={{ fontSize: 18 }}>Misha Abaya - Mocca Nude</Card.Title>
@@ -61,7 +67,7 @@ export default function Abaya() {
                     <small className="text-muted">Stocks: 20</small>
                 </Card.Footer> */}
             </Card>
-            <Card>
+            <Card onClick={() => pushToItem(9)}>
                 <Card.Img variant="top" src={item9} />
                 <Card.Body>
                     <Card.Title style={{ fontSize: 18 }}>Misha Abaya - Dusty Pink Vanilla</Card.Title>

@@ -29,7 +29,8 @@
   text-align: center;
   width: 130vw;
   justify-content: center;
-  margin-right: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .nav-item {

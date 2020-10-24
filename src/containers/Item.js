@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { Card , CardDeck} from 'react-bootstrap'
 import ButtonAddCart from '../components/ButtonCart' 
+import { envi } from '../config'
+import ReactPixel from 'react-facebook-pixel'
 
 
 
 export default function Item ({ match }) {
+    
     const id = match.params.id
     const item = useSelector(state => state.items[id - 1])
     const separatedTitle = item.name.split("-")
+    useEffect(()=>{
+      if (envi === "production") {
+          ReactPixel.init("614220549496198")
+          ReactPixel.track("ViewContent")
 
+      }
+    }, [])
 return(<>
     <div className="container col-sm-12" >
     <CardDeck >

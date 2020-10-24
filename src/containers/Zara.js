@@ -4,11 +4,16 @@ import { CardDeck, Card, Badge} from 'react-bootstrap'
 import ButtonOrder from '../components/ButtonCart'
 import {useSelector} from 'react-redux'
 import { envi } from '../config'
+import { useHistory } from 'react-router-dom'
 
 
 
 
 export default function Zara() {
+    const history = useHistory()
+    const pushToItem = (itemId) => {
+        history.push('/item/' + itemId)
+    }
     useEffect(() => {
         if(envi === "production"){
             ReactPixel.init("614220549496198")
@@ -25,7 +30,7 @@ export default function Zara() {
 
     return (<><div className="container col-sm-9" >
         <CardDeck>
-            <Card>
+            <Card onClick={() => pushToItem(13)}>
                 <Card.Img variant="top" src={item13.img} />
                 <Card.Body>
                 <Card.Title style={{ fontSize: 18 }}>{item13.name} <Badge pill variant="warning">New</Badge></Card.Title>
@@ -49,7 +54,7 @@ export default function Zara() {
                     <small className="text-muted">Stocks: 20</small>
                 </Card.Footer> */}
             </Card>
-            <Card>
+            <Card onClick={() => pushToItem(14)}>
                 <Card.Img variant="top" src={item14.img} />
                 <Card.Body>
                  
@@ -74,7 +79,7 @@ export default function Zara() {
                     <small className="text-muted">Stocks: 20</small>
                 </Card.Footer> */}
             </Card>
-            <Card>
+            <Card onClick={() => pushToItem(15)}>
                 <Card.Img variant="top" src={item15.img} />
                 <Card.Body>
                     <Card.Title style={{ fontSize: 18 }}>{item15.name} <Badge pill variant="warning">New</Badge></Card.Title>
@@ -106,7 +111,7 @@ export default function Zara() {
     </div >
     <div className="container col-sm-6" style={{marginTop: 30}}>
         <CardDeck>
-        <Card>
+        <Card onClick={() => pushToItem(16)}>
                 <Card.Img variant="top" src={item16.img} />
                 <Card.Body>
                 <Card.Title style={{ fontSize: 18 }}>{item16.name} <Badge pill variant="warning">New</Badge></Card.Title>
@@ -130,7 +135,7 @@ export default function Zara() {
                     <small className="text-muted">Stocks: 20</small>
                 </Card.Footer> */}
             </Card>
-            <Card>
+            <Card onClick={() => pushToItem(17)}>
                 <Card.Img variant="top" src={item17.img} />
                 <Card.Body>
                  

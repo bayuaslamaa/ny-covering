@@ -4,11 +4,16 @@ import { CardDeck, Card , Badge} from 'react-bootstrap'
 import ButtonOrder from '../components/ButtonCart'
 import {useSelector} from 'react-redux'
 import { envi } from '../config'
+import { useHistory } from 'react-router-dom'
 
 
 
 
 export default function ZaraBlack() {
+    const history = useHistory()
+    const pushToItem = (itemId) => {
+        history.push('/item/' + itemId)
+    }
     useEffect(()=>{
         if(envi === "production"){
 
@@ -28,7 +33,7 @@ export default function ZaraBlack() {
 
     return (<><div className="container col-sm-9" >
         <CardDeck>
-            <Card>
+            <Card onClick={() => pushToItem(18)}>
                 <Card.Img variant="top" src={item18.img} />
                 <Card.Body>
                 <Card.Title style={{ fontSize: 18 }}>{item18.name} <Badge pill variant="warning">New</Badge></Card.Title>
@@ -48,7 +53,7 @@ export default function ZaraBlack() {
                     <small className="text-muted">Stocks: 20</small>
                 </Card.Footer> */}
             </Card>
-            <Card>
+            <Card onClick={() => pushToItem(19)}>
                 <Card.Img variant="top" src={item19.img} />
                 <Card.Body>
                  
@@ -69,7 +74,7 @@ export default function ZaraBlack() {
                     <small className="text-muted">Stocks: 20</small>
                 </Card.Footer> */}
             </Card>
-            <Card>
+            <Card onClick={() => pushToItem(20)}>
                 <Card.Img variant="top" src={item20.img} />
                 <Card.Body>
                     <Card.Title style={{ fontSize: 18 }}>{item20.name} <Badge pill variant="warning">New</Badge></Card.Title>
@@ -97,7 +102,7 @@ export default function ZaraBlack() {
     </div >
     <div className="container col-sm-9" style={{marginTop: 30}}>
         <CardDeck>
-        <Card>
+             <Card onClick={() => pushToItem(21)}>
                 <Card.Img variant="top" src={item21.img} />
                 <Card.Body>
                 <Card.Title style={{ fontSize: 18 }}>{item21.name} <Badge pill variant="warning">New</Badge></Card.Title>
@@ -117,7 +122,7 @@ export default function ZaraBlack() {
                     <small className="text-muted">Stocks: 20</small>
                 </Card.Footer> */}
             </Card>
-            <Card>
+            <Card onClick={() => pushToItem(22)}>
                 <Card.Img variant="top" src={item22.img} />
                 <Card.Body>
                  
@@ -138,7 +143,7 @@ export default function ZaraBlack() {
                     <small className="text-muted">Stocks: 20</small>
                 </Card.Footer> */}
             </Card>
-            <Card>
+            <Card onClick={() => pushToItem(23)}>
                 <Card.Img variant="top" src={item23.img} />
                 <Card.Body>
                  
@@ -164,7 +169,7 @@ export default function ZaraBlack() {
     </div>
     <div className="container col-sm-6" style={{marginTop: 30}}>
         <CardDeck>
-        <Card>
+        <Card onClick={() => pushToItem(24)}>
                 <Card.Img variant="top" src={item24.img} />
                 <Card.Body>
                 <Card.Title style={{ fontSize: 18 }}>{item24.name} <Badge pill variant="warning">New</Badge></Card.Title>
@@ -184,7 +189,7 @@ export default function ZaraBlack() {
                     <small className="text-muted">Stocks: 20</small>
                 </Card.Footer> */}
             </Card>
-            <Card>
+            <Card onClick={() => pushToItem(25)}>
                 <Card.Img variant="top" src={item25.img} />
                 <Card.Body>
                  

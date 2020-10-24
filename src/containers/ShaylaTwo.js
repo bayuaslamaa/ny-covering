@@ -4,9 +4,13 @@ import {envi} from "../config"
 import {useSelector} from 'react-redux'
 import { CardDeck, Card, Badge} from 'react-bootstrap'
 import ButtonAddCart from '../components/ButtonCart' 
+import { useHistory } from 'react-router-dom'
 
 export default function ShaylaTwo() {
-
+    const history = useHistory()
+    const pushToItem = (itemId) => {
+        history.push('/item/' + itemId)
+    }
     useEffect(()=>{
         if(envi === "production") {
             ReactPixel.init("614220549496198")
@@ -18,7 +22,7 @@ export default function ShaylaTwo() {
     return (<div  className={`container col-sm-${6}`} >
         <CardDeck>
                     
-                    <Card>
+                    <Card onClick={() => pushToItem(36)}>
                         <Card.Img variant="top" src={item36.img}  />
                         <Card.Body>
                             <Card.Title  style={{fontWeight: 600}}>{item36.name} <Badge pill variant="warning">New</Badge></Card.Title>
@@ -40,7 +44,7 @@ export default function ShaylaTwo() {
                     </Card.Footer>
                         </Card.Body>
                     </Card>
-                    <Card>
+                    <Card onClick={() => pushToItem(37)}>
                         <Card.Img variant="top" src={item37.img}  />
                         <Card.Body>
                             <Card.Title  style={{fontWeight: 600}}>{item37.name} <Badge pill variant="warning">New</Badge></Card.Title>

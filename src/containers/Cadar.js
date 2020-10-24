@@ -4,9 +4,13 @@ import {envi} from "../config"
 import {useSelector} from 'react-redux'
 import { CardDeck, Card, Badge} from 'react-bootstrap'
 import ButtonAddCart from '../components/ButtonCart' 
+import {useHistory} from 'react-router-dom'
 
 export default function Cadar() {
-
+    const history = useHistory()
+    const pushToItem = (itemId) => {
+        history.push('/item/' + itemId)
+    }
     useEffect(()=>{
         if(envi === "production") {
             ReactPixel.init("614220549496198")
@@ -20,7 +24,7 @@ export default function Cadar() {
     return (<div  className={`container col-sm-${12}`} >
         <CardDeck>
                     
-                    <Card>
+                    <Card onClick={() => pushToItem(28)}>
                         <Card.Img variant="top" src={item28.img}  />
                         <Card.Body>
                             <Card.Title  style={{fontWeight: 600}}>{item28.name} <Badge pill variant="warning">New</Badge></Card.Title>
@@ -36,7 +40,7 @@ Breathable, no berembun untuk yang berkacamata dan TANPA jahit di hidung
                             <ButtonAddCart id={28} />
                         </Card.Body>
                     </Card>
-                    <Card>
+                    <Card onClick={() => pushToItem(29)}>
                         <Card.Img variant="top" src={item29.img}  />
                         <Card.Body>
                             <Card.Title  style={{fontWeight: 600}}>{item29.name} <Badge pill variant="warning">New</Badge></Card.Title>
@@ -52,7 +56,7 @@ Breathable, no berembun untuk yang berkacamata dan TANPA jahit di hidung
                             <ButtonAddCart id={29} />
                         </Card.Body>
                     </Card>
-                    <Card>
+                    <Card onClick={() => pushToItem(30)}>
                         <Card.Img variant="top" src={item30.img}  />
                         <Card.Body>
                             <Card.Title  style={{fontWeight: 600}}>{item30.name} <Badge pill variant="warning">New</Badge></Card.Title>
@@ -68,7 +72,7 @@ Breathable, no berembun untuk yang berkacamata dan TANPA jahit di hidung
                             <ButtonAddCart id={30} />
                         </Card.Body>
                     </Card>
-                    <Card>
+                    <Card onClick={() => pushToItem(31)}>
                         <Card.Img variant="top" src={item31.img}  />
                         <Card.Body>
                             <Card.Title  style={{fontWeight: 600}}>{item31.name} <Badge pill variant="warning">New</Badge></Card.Title>

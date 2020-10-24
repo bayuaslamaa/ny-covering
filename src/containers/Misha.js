@@ -3,10 +3,14 @@ import ReactPixel from 'react-facebook-pixel'
 import {envi} from "../config"
 import {useSelector} from 'react-redux'
 import { CardDeck, Card} from 'react-bootstrap'
+import { useHistory } from 'react-router-dom'
 import ButtonAddCart from '../components/ButtonCart' 
 
 export default function Misha() {
-
+    const history = useHistory()
+    const pushToItem = (itemId) => {
+        history.push('/item/' + itemId)
+    }
     useEffect(()=>{
         if(envi === "production") {
             ReactPixel.init("614220549496198")
@@ -19,7 +23,7 @@ export default function Misha() {
     return (<div  className={`container col-sm-${9}`} style={{marginBottom: 40}} >
         <CardDeck>
                     
-                    <Card>
+                    <Card onClick={() => pushToItem(4)}>
                         <Card.Img variant="top" src={item4}  />
                         <Card.Body>
                             <Card.Title  style={{fontWeight: 600}}>Misha Khimar - Nude</Card.Title>
@@ -46,7 +50,7 @@ export default function Misha() {
                             <p className="text-muted">Stocks: 50</p>
                         </Card.Footer> */}
                     </Card>
-                    <Card>
+                    <Card onClick={() => pushToItem(5)}>
                         <Card.Img variant="top" src={item5} />
                         <Card.Body>
                             <Card.Title style={{fontWeight: 600}}>Misha Khimar - Oat Vanilla</Card.Title>
@@ -65,7 +69,7 @@ export default function Misha() {
                             <p className="text-muted">Stocks: 20</p>
                         </Card.Footer> */}
                     </Card>
-                    <Card>
+                    <Card onClick={() => pushToItem(6)}>
                         <Card.Img variant="top" src={item6}  />
                         <Card.Body>
                             <Card.Title style={{fontWeight: 600}}>Misha Khimar - Coffee</Card.Title>

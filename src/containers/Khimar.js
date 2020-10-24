@@ -15,6 +15,9 @@ export default function Farhah() {
         }
       }, [])
     const history = useHistory()
+    const pushToItem = (itemId) => {
+        history.push('/item/' + itemId)
+    }
     const item1 = useSelector(state => state.items[0])
     const item2 = useSelector(state => state.items[1])
     const item3 = useSelector(state => state.items[2])
@@ -24,7 +27,7 @@ export default function Farhah() {
    
     return (<><div className={`container col-sm-${9}`} >
        <CardDeck>
-                <Card onClick={() => history.push(`/item/${1}`)}>
+                <Card onClick={() => pushToItem(1)}>
                     <Card.Img variant="top" src={item1.img} />
                     <Card.Body>
                         <Card.Title style={{fontWeight: 600}}>Farhah Khimar - Baby Blue</Card.Title>
@@ -39,7 +42,7 @@ export default function Farhah() {
                         <p className="text-muted">Stocks: 14</p>
                     </Card.Footer> */}
                 </Card>
-                <Card>
+                <Card onClick={() => pushToItem(2)}>
                     <Card.Img variant="top" src={item2.img} />
                     <Card.Body>
                         <Card.Title style={{ fontSize: 19, fontWeight: 600 }}>Farhah Khimar - Olive Green</Card.Title>
@@ -55,7 +58,7 @@ export default function Farhah() {
                         <p className="text-muted">Stocks: 0 (Restock Soon)</p>
                     </Card.Footer>
                 </Card>
-                <Card>
+                <Card onClick={() => pushToItem(3)}>
                     <Card.Img variant="top" src={item3.img} />
                     <Card.Body>
                         <Card.Title style={{fontWeight: 600}}>Farhah Khimar - Candy Pink</Card.Title>
@@ -76,7 +79,7 @@ export default function Farhah() {
             </CardDeck>
     </div ><div className={`container col-sm-${6}`} style={{marginTop: 30}}>
        <CardDeck>
-                <Card>
+                <Card onClick={() => pushToItem(26)}>
                     <Card.Img variant="top" src={item26.img} />
                     <Card.Body>
                         <Card.Title style={{fontWeight: 600}}>{item26.name} <Badge pill variant="warning">New</Badge></Card.Title>
@@ -92,7 +95,7 @@ export default function Farhah() {
                         <p className="text-muted">Stocks: 14</p>
                     </Card.Footer> */}
                 </Card>
-                <Card>
+                <Card onClick={() => pushToItem(27)}>
                     <Card.Img variant="top" src={item27.img} />
                     <Card.Body>
                         <Card.Title style={{ fontSize: 19, fontWeight: 600 }}>{item27.name} <Badge pill variant="warning">New</Badge></Card.Title>
