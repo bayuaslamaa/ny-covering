@@ -20,7 +20,8 @@ import nyco from '../assets/nyco.png'
 import Cart from '../containers/Cart'
 import Cadar from '../containers/Cadar'
 import Confirmation from '../containers/Confirmation'
-import Item  from '../containers/Item'
+import Item  from '../containers/Item'  
+import Hijab from '../containers/Hijab'
 import { MDBIcon } from 'mdbreact'
 import {useSelector, useDispatch} from 'react-redux'
 import './Navbar.css';
@@ -202,6 +203,8 @@ export default function NavbarPage() {
                                       <Link className="nav-links" to="/shayla-two" onClick={closeMobileMenu}>Shayla Dress{<p style={{color: "#9C7A76"}}>Style 2</p>}</Link>
                                   <NavDropdown.Divider />
                                           <Link className="nav-links" to="/farhah" onClick={closeMobileMenu}>Farhah Khimar{<p><Badge pill variant="warning">New Item </Badge></p>}</Link>
+                                  <NavDropdown.Divider />
+                                  <Link className="nav-links" to="/kahla-hijab" onClick={closeMobileMenu}>Kahla Hijab</Link>
                                      </NavDropdown>
                                  </li>
                                  <li className="nav-item">
@@ -244,7 +247,15 @@ export default function NavbarPage() {
                                        
                                     </NavDropdown>
                                 </li>
-                                 
+                                <li className="nav-item">
+                                    <NavDropdown title="Hijab" className="nav-links" id="basic-nav-dropdown">
+                                        
+                                    <Link className="nav-links" to="/kahla-hijab" onClick={closeMobileMenu}>Kahla Hijab</Link>
+                                      
+                                      
+                                       
+                                    </NavDropdown>
+                                </li>
    
         
         </ul>
@@ -279,6 +290,7 @@ export default function NavbarPage() {
                 <Route path="/shayla-one"><ShaylaOne /></Route>
                 <Route path="/shayla-two"><ShaylaTwo /></Route>
                 <Route path="/confirm"><Confirmation/></Route>
+                <Route path="/kahla-hijab"><Hijab/></Route>
                 <Route path="/item/:id" component={Item}></Route>
             </Switch>
       </Router>

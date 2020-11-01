@@ -34,6 +34,8 @@ export default (props) => {
          )
     } else if (id === 2 || id === 35 || id === 36 || id === 37){
       return (<><Button title="mulai order"  variant="light" style={{backgroundColor:"grey", color: "white"}}><MDBIcon icon="cart-plus" /> Tambah Ke Keranjang</Button></>)
+    } else if (id > 37){
+      return (<><Button title="mulai order" onClick={() => addCart(id) } variant="light" style={{backgroundColor:"#9C7A76", color: "white"}}><MDBIcon icon="cart-plus" /></Button></>)
     } else {
             return (<><Button title="mulai order" onClick={() => addCart(id) } variant="light" style={{backgroundColor:"#9C7A76", color: "white"}}><MDBIcon icon="cart-plus" /> Tambah Ke Keranjang</Button></>)
     }

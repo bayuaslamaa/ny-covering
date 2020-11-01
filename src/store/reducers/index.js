@@ -38,7 +38,21 @@ import SkyBlue from '../../assets/SkyBlue.jpg'
 
 import LovelyPink2 from '../../assets/LovelyPink2.jpg'
 import DustyPink2 from '../../assets/DustyPink2.jpg'
-
+import lightGray from '../../assets/light-gray.jpeg'
+import limePunch from '../../assets/lime-punch.jpeg'
+import sudanBrown from '../../assets/sudan-brown.jpeg'
+import pearledIvory from '../../assets/pearled-ivory.jpeg'
+import mochaBisque from '../../assets/mocha-bisque.jpeg'
+import militaryOlive from '../../assets/military-olive.jpeg'
+import midnightBlue from '../../assets/midnight-blue.jpeg'
+import jadeLime from '../../assets/jade-lime.jpeg'
+import dusty from '../../assets/dusty.jpeg'
+import dustyCedar from '../../assets/dusty-cedar.jpeg'
+import coralReef from '../../assets/coral-reef.jpeg'
+import caramel from '../../assets/caramel.jpeg'
+import bottleGreen from '../../assets/bottle-green.jpeg'
+import bakedClay from '../../assets/baked-clay.jpeg'
+import blacky from '../../assets/blacky.JPG'
 
 
 const initialState = {
@@ -87,7 +101,23 @@ const initialState = {
         {id: 36, name: 'Shayla Dress Style 2 - Lovely Pink', price: 190000, qty: 0, img: LovelyPink2},
         {id: 37, name: 'Shayla Dress Style 2 - Dusty Pink', price: 190000, qty: 0, img: DustyPink2},
 
-        
+        {id: 38, name: 'Kahla Hijab - Light Gray', price: 79000, qty: 0, img: lightGray},
+        {id: 39, name: 'Kahla Hijab - Lime Punch', price: 79000, qty: 0, img: limePunch},
+        {id: 40, name: 'Kahla Hijab - Sudan Brown', price: 79000, qty: 0, img: sudanBrown},
+        {id: 41, name: 'Kahla Hijab - Pearled Ivory', price: 79000, qty: 0, img: pearledIvory},
+        {id: 42, name: 'Kahla Hijab - Mocha Bisque', price: 79000, qty: 0, img: mochaBisque},
+        {id: 43, name: 'Kahla Hijab - Military Olive', price: 79000, qty: 0, img: militaryOlive},
+
+        {id: 44, name: 'Kahla Hijab - Midnight Blue', price: 79000, qty: 0, img: midnightBlue},
+        {id: 45, name: 'Kahla Hijab - Jade Lime', price: 79000, qty: 0, img: jadeLime},
+        {id: 46, name: 'Kahla Hijab - Dusty', price: 79000, qty: 0, img: dusty},
+        {id: 47, name: 'Kahla Hijab - Dusty Cedar', price: 79000, qty: 0, img: dustyCedar},
+        {id: 48, name: 'Kahla Hijab - Coral Reef', price: 79000, qty: 0, img: coralReef},
+        {id: 49, name: 'Kahla Hijab - Caramel', price: 79000, qty: 0, img: caramel},
+
+        {id: 50, name: 'Kahla Hijab - Bottle Green', price: 79000, qty: 0, img: bottleGreen},
+        {id: 51, name: 'Kahla Hijab - Blacky', price: 79000, qty: 0, img: blacky},
+        {id: 52, name: 'Kahla Hijab - Baked Clay', price: 79000, qty: 0, img: bakedClay},
         
     ],
     addedItems: [],
